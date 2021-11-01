@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport", content="width=device-width, initial-scale=1">
+    <title>HYP2021</title>
+    <!-- Use Google Material icons
+         more info: https://www.w3schools.com/icons/google_icons_intro.asp
+         dark/light variants: https://google.github.io/material-design-icons/
+      -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Use Google fnts -->
+    <!-- Get more Fira Sans weights from here: https://fonts.google.com/?query=fira+sans&selection.family=Fira+Sans+Condensed:200 -->
+    <link href="https://fonts.googleapis.com/css?family=Fira Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira Sans Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
+    <!-- Internal CSS -->
+    <style>
+      body {
+      font-family: 'Fira Sans Condensed';
+      font-size: 16px;
+      max-width: 1024px;
+      margin: auto;
+      }
+
+      .tabbar {
+      overflow: hidden;
+      border: 1px solid: #ccc;
+      background-color: #f1f1f1;
+      }
+
+      .tabbar button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 24px;
+      transition: 0.3s;
+      font-family: 'Fira Sans Condensed';
+      font-weight: normal;
+      font-size: 18px;
+      }
+
+      .tabbar button:hover {
+      background-color: #ddd;
+      }
+
+      .tabbar button.active {
+      background-color: #ccc;
+      }
+
+      .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+      }
+
+      /* Different sizes of Material icons */
+      .material-icons.md-18 { font-size: 18px; vertical-align: middle;}
+      .material-icons.md-24 { font-size: 24px;} /* Default */
+      .material-icons.md-36 { font-size: 36px;}
+      .material-icons.md-48 { font-size: 48px;}
+
+      /* Black on light */
+      material-icons.md-dark {color: rgba(0, 0, 0, 0.54);}
+      material-icons.md-dark.md-inactive {color: rgba(0, 0, 0, 0.26);}
+      /* White on dark */
+      material-icons.md-dark {color: rgba(255, 255, 255, 1);}
+      material-icons.md-dark.md-inactive {color: rgba(255, 255, 255, 0.3);}
+
+       h1 {font-weight: 200; font-size: 28px;}
+    </style>
+
+  </head>
+
+  <body>
+    <div class="tabbar">
+      <!-- <div style="float: left;padding: 14px 5px; font-family: 'Fira Mono'; background-color: #000; color: #fff;">HYP2021</div> -->
+      <button class="tablinks" onclick="displayContent('Home', this)" id="defaultOpen"><i class="material-icons md-18">home</i> Home</button>
+      <button class="tablinks" onclick="displayContent('Venue', this)"><i class="material-icons md-18">map</i> Venue</button>
+      <button class="tablinks" onclick="displayContent('Organizers', this)"><i class="material-icons md-18">people</i> Organizers</button>
+      <button class="tablinks" onclick="displayContent('Dates', this)"><i class="material-icons md-18">calendar_today</i> Important dates</button>
+      <button class="tablinks" onclick="displayContent('Contact', this)"><i class="material-icons md-18">contact_mail</i> Contact</button>
+    </div>
+
+    <div id="Home" class="tabcontent">
+      <h1>Home</h1>
+      <p>Welcome ...</p>
+    </div>
+
+    <div id="Venue" class="tabcontent">
+      <h1>Venue</h1>
+      <p>Bla bla ...</p>
+    </div>
+
+    <div id="Organizers" class="tabcontent">
+      <h1>Organizers</h1>
+      <p>Bla bla ...</p>
+    </div>
+
+    <div id="Dates" class="tabcontent">
+      <h1>Important dates</h1>
+      <p>Bla bla ...</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h1>Contact</h1>
+      <p>Bla bla ...</p>
+    </div>
+
+    <script>
+      document.getElementById("defaultOpen").click();
+
+      function displayContent(tab, element) {
+      // Declare variables
+      var i, tabcontent, tablinks;
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      // Get all elements with class = "tablinks" and remove the class " active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      // Show the current tab and add an "active" class to the button that opened the tab
+      document.getElementById(tab).style.display = "block";
+      element.className += " active";
+      }
+      </script>
+  </body>
+
+</html>
+
+<!--
+TODOS
+- add favicon
+https://stackoverflow.com/questions/2268204/favicon-dimensions
+- picture prague / some logo / hypernuclei related
+-->
