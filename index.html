@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport", content="width=device-width, initial-scale=1">
     <title>HYP2021</title>
-    <!-- Use Google Material icons
-         more info: https://www.w3schools.com/icons/google_icons_intro.asp
-         dark/light variants: https://google.github.io/material-design-icons/
-      -->
+    <!-- <link rel="icon" type="image/x-icon" href="hyp2022.png"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Use Google fnts -->
     <!-- Get more Fira Sans weights from here: https://fonts.google.com/?query=fira+sans&selection.family=Fira+Sans+Condensed:200 -->
@@ -50,6 +47,60 @@
 	  margin-left: auto;
 	  margin-right: auto;
       }
+
+      table.contact {
+	  border: 0px;
+      }
+
+      table.contact td {
+	  vertical-align: top;
+	  /* height:30px; */
+	  padding-bottom: 10px;
+	  padding-left:30px;
+      }
+
+      table.dates {
+	  border: 0px solid #26304b; border-collapse: collapse;
+	  width: 80%;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  background-color: #e4e4e4;
+      }
+
+      table.dates td {
+	  vertical-align: middle;
+	  /* height:60px; */
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  padding-left: 30px;
+	  padding-right: 30px;
+	  /* opacity: 0.8; */
+      }
+
+      table.dates td:nth-child(1) {
+	  background-color:#42687d20;
+	  /* color:#dcdadb; */
+	  /* opacity:0.6; */
+      }
+
+      table.dates td:nth-child(2) {
+	  background-color: #42687d10;
+	  /* color:#dcdadb; */
+	  /* opacity:0.3; */
+      }
+
+      table.dates td:nth-child(3) {
+	  background-color: #42687d05;
+	  /* color:#dcdadb; */
+	  /* opacity:0.1; */
+      }
+
+      table.dates tr:nth-child(4) {
+	  opacity: 1;
+	  /* color:#dcdadb; */
+	  /* opacity:0.1; */
+      }
       
       body {
       font-family: 'Fira Sans Condensed';
@@ -61,10 +112,10 @@
       color: #26304b;
       /* height:100%; */
       }
-
+	  
       .tabbar {
       overflow: hidden;
-      border: 1px solid: #ccc;
+      /* border: 1px solid: #ccc; */
       background-color: #213649;
       }
 
@@ -114,7 +165,9 @@
 
       h1 {
 	  font-weight: 400;
-	  font-size: 32px;}
+	  font-size: 32px;
+	  /* padding-top: 20px; */
+      }
 
       #header1 {
 	  font-family: 'Fira Sans Extra Condensed';
@@ -182,7 +235,7 @@
       </p>
 
       <p> 
-	Topics to be discussed at the conference include:
+	Topics to be discussed at the conference include
 	<ul>
 	  <li> Production, structure and decay of hypernuclei</li>
 	  <li> Multistrange systems</li>
@@ -198,7 +251,7 @@
       </p>
 
       <p>
-	The HYP2021 Conference will be hosted by:
+	The HYP2021 Conference will be hosted by
 	<ul>
 	  <li><a href="http://ujf.cas.cz/en/">Nuclear Physics Institute, Czech Academy of Sciences, Rez</a> </li>
 	  <li><a href="https://www.fjfi.cvut.cz/en/">Faculty of Nuclear Sciences and Physical Engineering, Czech Technical University in Prague</a> </li>
@@ -270,12 +323,79 @@
 
     <div id="Dates" class="tabcontent">
       <h1>Important dates</h1>
-      <p>Bla bla ...</p>
+      <p>
+	<table class="dates">
+	  <tr>
+	    <td>
+	      <span>2019
+	    </td>
+	    <td>
+	      June
+	    </td>
+	    <td>
+	      1st HYP announcement, www pages of the conference
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>2020</td>
+	    <td>June</td>
+	    <td>1st progress report to IAC</td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	    <td>October</td>
+	    <td>2nd progress report to IAC, <br/><b>decision to postpone the HYP conference to June&nbsp;27 &ndash; July&nbsp;1, 2022</b></td>
+	  </tr>
+	  <tr>
+	    <td>2021</td>
+	    <td>November</td>
+	    <td>3rd progress report to IAC, call for 
+	      nominations of invited speakers,<br/><b> call for abstracts, start of registration</b></td>
+	  </tr>
+	  <tr>
+	    <td>2022</td>
+	    <td>June&nbsp;27 &ndash; July&nbsp;1</td>
+	    <td><b>HYP2022 Conference</b></td>
+	  </tr>
+	</table>
+      </p>
     </div>
 
     <div id="Contact" class="tabcontent">
       <h1>Contact</h1>
-      <p>Bla bla ...</p>
+      <table class="contact">
+	<tr>
+	  <td><i class="material-icons md-18">local_post_office</i>&nbsp;&nbsp;Address:</td>
+	  <td>Jiri Mares - HYP2022<br/>
+	    Nuclear Physics Institute ASCR<br/>
+	    250 68 Rez<br />
+	    Czech Republic
+	  </td>
+	</tr>
+	<tr>
+	  <td><i class="material-icons md-18">call</i>&nbsp;&nbsp;Phone:</td>
+	  <td>+420 266 173 283</td>
+	</tr>
+	<tr>
+	  <td><i class="material-icons md-18">fax</i>&nbsp;&nbsp;Fax:</td>
+	  <td>+420 220 940 165</td>
+	</tr>
+	<tr>
+	  <td><i class="material-icons md-18">email</i>&nbsp;&nbsp;E-mail:</td>
+	  <td>hyp2022@ujf.cas.cz</td>
+	</tr>
+      </table>
+      <!-- <p><i class="material-icons md-18">local_post_office</i>&nbsp;&nbsp;Address:<br/> -->
+      <!-- 	  Jiri Mares - HYP2022<br/> -->
+      <!-- 	  Nuclear Physics Institute ASCR<br/> -->
+      <!-- 	  250 68 Rez<br /> -->
+      <!-- 	  Czech Republic -->
+      <!-- </p> -->
+      <!-- <p> -->
+      <!-- 	<i class="material-icons md-18">call</i>&nbsp;&nbsp;Phone: +420 266 173 283<br/> -->
+      <!-- 	<i class="material-icons md-18">fax</i>&nbsp;&nbsp;Fax: +420 220 940 165<br/> -->
+      <!-- 	<i class="material-icons md-18">email</i>&nbsp;&nbsp;E-mail: hyp2022@ujf.cas.cz<br/> -->
+      <!-- </p> -->
     </div>
 
     <script>
