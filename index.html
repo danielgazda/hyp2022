@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport", content="width=device-width, initial-scale=1">
     <title>HYP2021</title>
-    <!-- <link rel="icon" type="image/x-icon" href="icon.png"> -->
+    <link rel="icon" type="image/x-icon" href="icon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Use Google fnts -->
     <!-- Get more Fira Sans weights from here: https://fonts.google.com/?query=fira+sans&selection.family=Fira+Sans+Condensed:200 -->
@@ -196,6 +196,15 @@
 	  opacity: 80%;
       }
 
+      /* footer { */
+      /* 	  /\* display: block; *\/ */
+      /* 	  width:100%; */
+      /* 	  background-color: #213649; */
+      /* 	  color: #dcdadb; */
+      /* 	  position: sticky; */
+      /* 	  bottom: 0px; */
+      /* } */
+
       #aw {
 	  /* background-image:url('./aw1024.png'); */
 	  background-image: url('./aw_1024x130px.png');
@@ -239,6 +248,7 @@
     </div>
 
     <div id="Home" class="tabcontent">
+      
       <h1>Welcome</h1>
       <p>
 	The 14th International Conference on Hypernuclear and Strange
@@ -318,17 +328,15 @@
       <!-- <p><ul><li></li></ul></p> -->
       <h1>Hosts</h1>
       <p>
-
-	<div style="line-height: 80px;">
-	  <img src="logo_ujf.png" style="height: 80px; opacity: 60%;float:left;margin-right: 30px;margin-left: 10px;">
-	  Nuclear Physics Institute, Czech Academy of Sciences
-	  <!-- , Rez -->
-	</div>
-	<br/>
-	<div style="line-height: 80px;">
-	  <img src="logo_fjfi.png" style="height: 80px; opacity: 60%;float:left;margin-right: 30px;margin-left: 10px;">
-	  Faculty of Nuclear Sciences and Physical Engineering, Czech Technical University in Prague
-	</div>
+	<table><tr>
+	  <td style="text-align: center;"><img src="logo_ujf.png" style="height: 70px; opacity: 60%"></td>
+	  <td style="padding-left: 15px;">Nuclear Physics Institute<br /> Czech Academy of Sciences</td>
+	</tr>
+	<tr>
+	  <td style="text-align: center;"><img src="logo_fjfi.png" style="height: 70px; opacity: 60%;"></td>
+	  <td style="padding-left: 15px;">Faculty of Nuclear Sciences and Physical Engineering<br /> Czech Technical University in Prague</td>
+	</tr>
+      </table>
       </p>
       <h1>Support</h1>
       <!-- <p><ul><li></li></ul></p> -->
@@ -409,18 +417,9 @@
 	  <td>hyp2022@ujf.cas.cz</td>
 	</tr>
       </table>
-      <!-- <p><i class="material-icons md-18">local_post_office</i>&nbsp;&nbsp;Address:<br/> -->
-      <!-- 	  Jiri Mares - HYP2022<br/> -->
-      <!-- 	  Nuclear Physics Institute ASCR<br/> -->
-      <!-- 	  250 68 Rez<br /> -->
-      <!-- 	  Czech Republic -->
-      <!-- </p> -->
-      <!-- <p> -->
-      <!-- 	<i class="material-icons md-18">call</i>&nbsp;&nbsp;Phone: +420 266 173 283<br/> -->
-      <!-- 	<i class="material-icons md-18">fax</i>&nbsp;&nbsp;Fax: +420 220 940 165<br/> -->
-      <!-- 	<i class="material-icons md-18">email</i>&nbsp;&nbsp;E-mail: hyp2022@ujf.cas.cz<br/> -->
-      <!-- </p> -->
     </div>
+
+    <!-- <footer>xxx</footer> -->
 
     <script>
       document.getElementById("defaultOpen").click();
