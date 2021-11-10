@@ -43,11 +43,11 @@
 	  color: #42687d;
       }
 
-      .center {
-	  display:block;
-	  margin-left: auto;
-	  margin-right: auto;
-      }
+      /* .center { */
+      /* 	  display:block; */
+      /* 	  margin-left: auto; */
+      /* 	  margin-right: auto; */
+      /* } */
 
       table.contact {
 	  border: 0px;
@@ -77,6 +77,11 @@
 	  padding-left: 30px;
 	  padding-right: 30px;
 	  /* opacity: 0.8; */
+      }
+
+      .unimportant {
+	  /* mute color */
+	  color: #26304b88;
       }
 
       table.dates td:nth-child(1) {
@@ -282,20 +287,22 @@
 
     <div id="Venue" class="tabcontent">
       <h1>Venue</h1>
+      <img style="margin-left:30px;float:right;height:280px;" src="./pyramida1.jpg">
       <p>
 	The Conference will take place in
-	the <a href="https://www.hotelpyramida.cz/en/">Hotel
+	<a href="https://www.hotelpyramida.cz/en/">OREA Hotel
 	Pyramida</a> which provides suitable working conditions for
 	the meeting. The hotel is located in a walking distance to
 	Prague Castle and historical parts of the town.
       </p>
       <p>
-	Participants will be accommodated in the Hotel Pyramida.
+	Participants will be accommodated in OREA Hotel Pyramida.
 	Alternative accommodation including Academy and University
 	hotels and student residences will be available as well.
       </p>
 
-      <p><img class="center" src="./pyramida1.jpg"></p>
+      <!-- <p><img class="center" src="./pyramida1.jpg"></p> -->
+      
       
     </div>
 
@@ -311,23 +318,17 @@
       <!-- <p><ul><li></li></ul></p> -->
       <h1>Hosts</h1>
       <p>
-	<ul>
-	  <li>
-	    <!-- <img src="logo_ujf.png"> -->
-	    <!-- <a href="http://ujf.cas.cz/en/"> -->
-	      Nuclear Physics
-	      Institute Czech Academy of Sciences, Rez
-	    <!-- </a> -->
-	  </li>
-	  <li>
-	    <!-- <img src="logo_fjfi.gif"> -->
-	    <!-- <a href="https://www.fjfi.cvut.cz/en/"> -->
-	      Faculty of Nuclear
-	      Sciences and Physical Engineering Czech Technical
-	      University in Prague
-	    <!-- </a> -->
-	  </li>
-	</ul>
+
+	<div style="line-height: 80px;">
+	  <img src="logo_ujf.png" style="height: 80px; opacity: 60%;float:left;margin-right: 30px;margin-left: 10px;">
+	  Nuclear Physics Institute, Czech Academy of Sciences
+	  <!-- , Rez -->
+	</div>
+	<br/>
+	<div style="line-height: 80px;">
+	  <img src="logo_fjfi.png" style="height: 80px; opacity: 60%;float:left;margin-right: 30px;margin-left: 10px;">
+	  Faculty of Nuclear Sciences and Physical Engineering, Czech Technical University in Prague
+	</div>
       </p>
       <h1>Support</h1>
       <!-- <p><ul><li></li></ul></p> -->
@@ -338,7 +339,7 @@
       <h1>Important dates</h1>
       <p>
 	<table class="dates">
-	  <tr>
+	  <tr class="unimportant">
 	    <td>
 	      2019
 	    </td>
@@ -346,34 +347,39 @@
 	      June
 	    </td>
 	    <td>
-	      1st HYP announcement<br/>
+	      1st HYP announcement
 	      <!-- Web pages of the conference -->
 	      <!-- www pages of the conference -->
 	    </td>
 	  </tr>
-	  <tr>
+	  <tr class="unimportant">
 	    <td>2020</td>
 	    <td>June</td>
 	    <td>1st progress report to IAB</td>
 	  </tr>
-	  <tr>
+	  <tr class="unimportant">
 	    <td></td>
 	    <td>October</td>
 	    <td>2nd progress report to IAB<br/>
-	      <b>Decision to postpone the conference to June&nbsp;27&nbsp;&ndash;&nbsp;July&nbsp;1,&nbsp;2022</b></td>
+		  Decision to postpone the conference to June&nbsp;27&nbsp;&ndash;&nbsp;July&nbsp;1,&nbsp;2022</td>
 	  </tr>
 	  <tr>
 	    <td>2021</td>
 	    <td>November</td>
 	    <td>IAB meeting<br/>
-	      Call for nominations of invited speakers<br/>
-	      <b>Call for abstracts<br/>
-		Start of registration</b></td>
+	      Call for nominations of invited speakers
+	      <!-- <b>Call for abstracts<br/> -->
+		<!-- Start of registration</b> -->
+	    </td>
 	  </tr>
+	  <tr><td></td><td>November 28</td><td>Registration opens<br/>Abstract submission opens</td></tr>
+	  <tr><td>2022</td><td>February 28</td><td>Abstract submission ends</td></tr>
+	  <tr><td></td><td>March 31</td><td>Abstract notification</td></tr>
+	  <tr><td></td><td>May 13</td><td>Registration ends</td></tr>
 	  <tr>
-	    <td>2022</td>
+	    <td></td>
 	    <td>June&nbsp;27 &ndash; July&nbsp;1</td>
-	    <td><b>HYP2022 Conference</b></td>
+	    <td>HYP2022 Conference dates</td>
 	  </tr>
 	</table>
       </p>
