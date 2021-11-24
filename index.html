@@ -6,30 +6,19 @@
     <title>HYP2022</title>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- Use Google fnts -->
-    <!-- Get more Fira Sans weights from here: https://fonts.google.com/?query=fira+sans&selection.family=Fira+Sans+Condensed:200 -->
     <link href="https://fonts.googleapis.com/css?family=Fira Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira Sans Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@900&display=swap" rel="stylesheet">
-    <!-- External CSS -->
-    <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
-    <!-- Internal CSS -->
     <style>
-
+      
       html {
-	  /* background-image: linear-gradient(to bottom right, #e6dfd5, #e6dfd5, #e4e4e4); */
 	  background-image: linear-gradient(to bottom right, #e6dfd5, #e4e4e4, #e4e4e4);
-	  /* background-image: linear-gradient(to bottom right, #e6dfd5, #e6dfd5, #e4e4e4, #e4e4e4); */
-	  /* background-image: linear-gradient(#e6dfd5, #e4e4e4); */
-	  /* height: 100%; */
 	  min-height: 100%;
       }
-
+      
       p {
-	  /* max-width: 1200px; */
-	  /* margin: auto; */
 	  line-height: 1.5;
 	  text-align: justify;
       }
@@ -38,28 +27,21 @@
 	  list-style-type: square;
 	  line-height: 1.5;
       }
-
+      
       a {
 	  color: #42687d;
       }
-
+      
       a.pic {
 	  text-decoration: none;
       }
-
-      /* .center { */
-      /* 	  display:block; */
-      /* 	  margin-left: auto; */
-      /* 	  margin-right: auto; */
-      /* } */
-
+      
       table.contact {
 	  border: 0px;
       }
 
       table.contact td {
 	  vertical-align: top;
-	  /* height:30px; */
 	  padding-bottom: 20px;
 	  padding-left: 30px;
       }
@@ -75,108 +57,79 @@
 
       table.dates td {
 	  vertical-align: top;
-	  /* height:60px; */
 	  padding-top: 20px;
 	  padding-bottom: 20px;
 	  padding-left: 30px;
 	  padding-right: 30px;
-	  /* opacity: 0.8; */
       }
 
       .mute {
-	  /* mute color */
 	  color: #26304b88;
       }
 
       table.dates td:nth-child(1) {
 	  background-color:#42687d20;
-	  /* color:#dcdadb; */
-	  /* opacity:0.6; */
       }
 
       table.dates td:nth-child(2) {
 	  background-color: #42687d10;
-	  /* color:#dcdadb; */
-	  /* opacity:0.3; */
       }
 
       table.dates td:nth-child(3) {
 	  background-color: #42687d05;
-	  /* color:#dcdadb; */
-	  /* opacity:0.1; */
       }
 
       table.dates tr:nth-child(4) {
 	  opacity: 1;
-	  /* color:#dcdadb; */
-	  /* opacity:0.1; */
       }
       
       body {
-      font-family: 'Fira Sans Condensed';
-      font-size: 20px;
-      max-width: 1024px;
-      /* max-width: 1200px; */
-      margin: auto;
-      /* background-color: #e6dfd5; */
-      color: #26304b;
-      /* height:100%; */
+	  font-family: 'Fira Sans Condensed';
+	  font-size: 20px;
+	  max-width: 1024px;
+	  margin: auto;
+	  color: #26304b;
       }
 	  
       .tabbar {
-      overflow: hidden;
-      /* border: 1px solid: #ccc; */
-      background-color: #213649;
+	  overflow: hidden;
+	  background-color: #213649;
       }
 
       .tabbar button {
-      background-color: inherit;
-      float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 24px;
-      transition: 0.3s;
-      font-family: 'Fira Sans Condensed';
-      font-weight: normal;
-      font-size: 18px;
-      margin: 0;
-      color: #dcdadb;
-
+	  background-color: inherit;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 24px;
+	  transition: 0.3s;
+	  font-family: 'Fira Sans Condensed';
+	  font-weight: normal;
+	  font-size: 18px;
+	  margin: 0;
+	  color: #dcdadb;
       }
 
       .tabbar button:hover {
-      background-color: #42687d;
+	  background-color: #42687d;
       }
-
+      
       .tabbar button.active {
-      background-color: #42687d;
+	  background-color: #42687d;
       }
-
+      
       .tabcontent {
-      display: none;
-      padding: 6px 12px;
-      /* border: 1px solid #ccc; */
-      border-top: none;
+	  display: none;
+	  padding: 6px 12px;
+	  border-top: none;
       }
 
-      /* Different sizes of Material icons */
       .material-icons.md-18 { font-size: 18px; vertical-align: middle;}
-      .material-icons.md-24 { font-size: 24px;} /* Default */
-      .material-icons.md-36 { font-size: 36px;}
-      .material-icons.md-48 { font-size: 48px;}
-
-      /* Black on light */
-      material-icons.md-dark {color: rgba(0, 0, 0, 0.54);}
-      material-icons.md-dark.md-inactive {color: rgba(0, 0, 0, 0.26);}
-      /* White on dark */
-      material-icons.md-dark {color: rgba(255, 255, 255, 1);}
-      material-icons.md-dark.md-inactive {color: rgba(255, 255, 255, 0.3);}
 
       h1 {
 	  font-weight: 400;
 	  font-size: 32px;
-	  /* padding-top: 20px; */
       }
 
       #header1 {
@@ -186,37 +139,19 @@
 	  display:block;
 	  float:left;
 	  width:19%;
-	  /* font-weight:black; */
 	  color: #213649;
-	  /* background-image: url('./prague-silhouette-background-free-vector.jpg'); */
-	  /* background-size:cover; */
-	  /* position:relative; */
       }
       #header2 {
 	  float:left;
 	  width:81%;
-	  /* color: #42687d; */
 	  color: #213649;
 	  opacity: 80%;
       }
 
-      /* footer { */
-      /* 	  /\* display: block; *\/ */
-      /* 	  width:100%; */
-      /* 	  background-color: #213649; */
-      /* 	  color: #dcdadb; */
-      /* 	  position: sticky; */
-      /* 	  bottom: 0px; */
-      /* } */
-
       #aw {
-	  /* background-image:url('./aw1024.png'); */
 	  background-image: url('./aw_1024x130px.png');
 	  width:1024px;
-	  /* background-image:url('./aw.png'); */
-	  /* width:1200px; */
 	  height:130px;
-	  /* height:150px; */
 	  background-size:cover;
 	  float:left;
 	  margin-bottom:20px;
@@ -276,14 +211,12 @@
 	  <li>Production, structure and decay of hypernuclei</li>
 	  <li>Multistrange systems</li>
 	  <li>Strangeness and hypernuclei in elementary reactions and nuclear collisions</li>
-	  <!-- Production of strangeness -->
 	  <li>Interactions of mesons and baryons with strangeness</li>
 	  <li>Strangeness in hadron structure</li>
 	  <li>Strange mesons in nuclei</li>
 	  <li>Strange exotic atoms</li>
 	  <li>Strangeness in astrophysics and in extreme forms of matter</li>
 	  <li>Heavy flavor systems</li>
-	  <!-- <li>Hypernuclei in heavy ion collisions</li> -->
 	  <li>Future experiments and facilities</li>
 	</ul>
       </p>
@@ -295,9 +228,6 @@
 	  <li><a href="https://www.fjfi.cvut.cz/en/">Faculty of Nuclear Sciences and Physical Engineering, Czech Technical University in Prague</a> </li>
 	</ul>
       </p>
-      <!-- <p> -->
-      <!-- 	The Conference will be preceded by the <a href="http://rafael.ujf.cas.cz/school">Indian-Summer School of Physics</a>.  -->
-      <!-- </p> -->
       <p>
 	We cordially invite you to participate and contribute to the scientific program of the Conference. 
       </p>	
@@ -319,9 +249,6 @@
 	hotels and student residences will be available as well.
       </p>
 
-      <!-- <p><img class="center" src="./pyramida1.jpg"></p> -->
-      
-      
     </div>
 
     <div id="Organizers" class="tabcontent">
@@ -335,16 +262,6 @@
       <h1>Hosts</h1>
       <p>
 	<table>
-	  <!-- Vertical -->
-	  <!-- <tr> -->
-	  <!--   <td style="text-align: center; padding-bottom: 15px;"><img src="logo_ujf_c.png" style="height: 60px; opacity: 100%"></td> -->
-	  <!--   <td style="padding-left: 30px; padding-bottom: 15px;">Nuclear Physics Institute<br /> The Czech Academy of Sciences</td> -->
-	  <!-- </tr> -->
-	  <!-- <tr> -->
-	  <!-- <td style="text-align: center;"><img src="logo_fjfi_c.png" style="height: 60px; opacity: 100%;"></td> -->
-	  <!-- <td style="padding-left: 30px;">Faculty of Nuclear Sciences and Physical Engineering<br /> Czech Technical University in Prague</td> -->
-	  <!-- </tr> -->
-	  <!-- Horizontal -->
 	  <tr>
 	    <td style="text-align: left; padding-left: 15px;"><img src="logo_ujf_c.png" style="height: 80px; opacity: 100%"></td>
 	    <td style="padding-left: 30px;">Nuclear Physics Institute<br /> The Czech Academy of Sciences</td>
@@ -356,126 +273,12 @@
 
       <h1>International Advisory Board</h1>
       <p>
-	<!-- One-line -->
-	<!-- Short -->
 	E. Botta (Torino), T. Bressani (Torino), H. Caines (Yale), C. Curceanu (Frascati), L. Fabbietti (Munich), A. Feliciello (Torino), A.&nbsp;Gal (Jerusalem), B.&nbsp;F.&nbsp;Gibson (Los Alamos), J.&nbsp;Haidenbauer (Juelich), E.&nbsp;Hiyama (Tohoku), T.&nbsp;Kishimoto (Osaka), H.&nbsp;Lenske (Giessen), Yu-Gang Ma (Shanghai), J.&nbsp;Mares (Rez), D.&nbsp;J.&nbsp;Millener (BNL), T.&nbsp;Motoba (Osaka), T.&nbsp;Nagae (Kyoto), S.&nbsp;N.&nbsp;Nakamura (Tohoku), H.&nbsp;Noumi (RCNP), M.&nbsp;Oka (Tokyo), E.&nbsp;Oset (Valencia), A.&nbsp;Parreno (Barcelona), J.&nbsp;Pochodzalla (Mainz), A.&nbsp;Ramos (Barcelona), R.&nbsp;Schumacher (CMU), H.&nbsp;Tamura (Tohoku), L.&nbsp;Tang (Hampton), I.&nbsp;Vidana (Catania), T.&nbsp;Yamazaki (Tokyo), Shi-Lin Zhu (Beijing), Bing-Song Zou (Beijing)
-	<!-- Long -->
-	<!-- Elena Botta (Torino), Tullio Bressani (Torino), Helen Caines (Yale), Catalina Curceanu (Frascati), Laura Fabbietti (Munich), Alessandro Feliciello (Torino), Avraham Gal (Jerusalem), Benjamin F. Gibson (Los Alamos), Johann Haidenbauer (Juelich), Emiko Hiyama (Kyushu), Tadafumi Kishimoto (Osaka), Horst Lenske (Giessen), Yu-Gang Ma (Shanghai), Jiri Mares (Rez), David John Millener (BNL), Toshio Motoba (Osaka), Tomofumi Nagae (Kyoto), Satoshi N. Nakamura (Tohoku), Hiroyuki Noumi (RCNP), Makoto Oka (Tokyo), Eulogio Oset (Valencia), Assumpta Parreno (Barcelona), Josef Pochodzalla (Mainz), Angels Ramos (Barcelona), Reinhard Schumacher (CMU), Hirokazu Tamura (Tohoku), Liguang Tang (Hampton), Isaac Vidana (Catania), Toshimitsu Yamazaki (Tokyo), Shi-Lin Zhu (Beijing), Bing-Song Zou (Beijing) -->
-	<!-- <ul> -->
-	<!--   <li>Elena Botta (Torino)</li> -->
-	<!--   <li>Tullio Bressani (Torino)</li> -->
-	<!--   <li>Helen Caines (Yale)</li> -->
-	<!--   <li>Catalina Curceanu (Frascati)</li> -->
-	<!--   <li>Laura Fabbietti (Munich)</li> -->
-	<!--   <li>Alessandro Feliciello (Torino)</li> -->
-	<!--   <li>Avraham Gal (Jerusalem)</li> -->
-	<!--   <li>Benjamin F. Gibson (Los Alamos)</li> -->
-	<!--   <li>Johann Haidenbauer (Juelich)</li> -->
-	<!--   <li>Emiko Hiyama (Kyushu)</li> -->
-	<!--   <li>Tadafumi Kishimoto (Osaka)</li> -->
-	<!--   <li>Horst Lenske (Giessen)</li> -->
-	<!--   <li>Yu-Gang Ma (Shanghai)</li> -->
-	<!--   <li>Jiri Mares (Rez)</li> -->
-	<!--   <li>John Millener (BNL)</li> -->
-	<!--   <li>Toshio Motoba (Osaka)</li> -->
-	<!--   <li>Tomofumi Nagae (Kyoto)</li> -->
-	<!--   <li>Satoshi N. Nakamura (Tohoku)</li> -->
-	<!--   <li>Hiroyuki Noumi (RCNP)</li> -->
-	<!--   <li>Makoto Oka (Tokyo)</li> -->
-	<!--   <li>Eulogio Oset (Valencia)</li> -->
-	<!--   <li>Assumpta Parreno (Barcelona)</li> -->
-	<!--   <li>Josef Pochodzalla (Mainz)</li> -->
-	<!--   <li>Angels Ramos (Barcelona)</li> -->
-	<!--   <li>Reinhard Schumacher (CMU)</li> -->
-	<!--   <li>Hirokazu Tamura (Tohoku)</li> -->
-	<!--   <li>Liguang Tang (Hampton)</li> -->
-	<!--   <li>Isaac Vidana (Catania)</li> -->
-	<!--   <li>Toshimitsu Yamazaki (Tokyo) -->
-	<!--   <li>Shi-Lin Zhu (Beijing)</li> -->
-	<!--   <li>Bing-Song Zou (Beijing)</li> -->
-	<!--   <\!-- <li>E. Botta (Torino)</li> -\-> -->
-	<!--   <\!-- <li>T. Bressani (Torino)</li> -\-> -->
-	<!--   <\!-- <li>H. Caines (Yale)</li> -\-> -->
-	<!--   <\!-- <li>C. Curceanu (Frascati)</li> -\-> -->
-	<!--   <\!-- <li>L. Fabbietti (Munich)</li> -\-> -->
-	<!--   <\!-- <li>A. Feliciello (Torino)</li> -\-> -->
-	<!--   <\!-- <li>A. Gal (Jerusalem)</li> -\-> -->
-	<!--   <\!-- <li>B. F. Gibson (Los Alamos)</li> -\-> -->
-	<!--   <\!-- <li>J. Haidenbauer (Juelich)</li> -\-> -->
-	<!--   <\!-- <li>E. Hiyama (Kyushu)</li> -\-> -->
-	<!--   <\!-- <li>T. Kishimoto (Osaka)</li> -\-> -->
-	<!--   <\!-- <li>H. Lenske (Giessen)</li> -\-> -->
-	<!--   <\!-- <li>Y.-G. Ma (Shanghai)</li> -\-> -->
-	<!--   <\!-- <li>J. Mares (Rez)</li> -\-> -->
-	<!--   <\!-- <li>J. Millener (BNL)</li> -\-> -->
-	<!--   <\!-- <li>T. Motoba (Osaka)</li> -\-> -->
-	<!--   <\!-- <li>T. Nagae (Kyoto)</li> -\-> -->
-	<!--   <\!-- <li>S. N. Nakamura (Tohoku)</li> -\-> -->
-	<!--   <\!-- <li>H. Noumi (RCNP)</li> -\-> -->
-	<!--   <\!-- <li>M. Oka (Tokyo)</li> -\-> -->
-	<!--   <\!-- <li>E. Oset (Valencia)</li> -\-> -->
-	<!--   <\!-- <li>A. Parreno (Barcelona)</li> -\-> -->
-	<!--   <\!-- <li>J. Pochodzalla (Mainz)</li> -\-> -->
-	<!--   <\!-- <li>A. Ramos (Barcelona)</li> -\-> -->
-	<!--   <\!-- <li>R. Schumacher (CMU)</li> -\-> -->
-	<!--   <\!-- <li>H. Tamura (Tohoku)</li> -\-> -->
-	<!--   <\!-- <li>L. Tang (Hampton)</li> -\-> -->
-	<!--   <\!-- <li>I. Vidana (Catania)</li> -\-> -->
-	<!--   <\!-- <li>T. Yamazaki (Tokyo) -\-> -->
-	<!--   <\!-- <li>S.-L. Zhu (Beijing)</li> -\-> -->
-	<!--   <\!-- <li>B.-S. Zou (Beijing)</li> -\-> -->
-	<!-- </ul> -->
+
       </p>
 
       <h1>Support</h1>
       <p>
-	<!-- With text -->
-	<!-- <table style="padding-left: 45px;"> -->
-	<!--   <tr> -->
-	<!--     <td style="text-align: left;padding-bottom: 5px;"> -->
-	<!--       <img src="strong2020.png" style="height: 70px; opacity: 100%; border-radius: 5px;"> -->
-	<!--     </td> -->
-	<!--     <td style="width: 45px;"></td> -->
-	<!--     <td  style="text-align: left; padding-bottom: 5px;"> -->
-	<!--       <img src="fjfi_logo_oc.png" style="height: 40px; opacity: 100%; border-radius: 5px; background-color: white; padding: 15px;"> -->
-	<!--       <img src="logo_cvut_en.jpg" style="height: 60px; opacity: 100%; border-radius: 5px; background-color: white; padding: 5px;"> -->
-	<!--     </td> -->
-	<!--     <td style="width: 45px;"></td> -->
-	<!--     <td style="text-align: left;padding-bottom: 5px;"> -->
-	<!--       <img src="logo_ujf_oc.jpg" style="height: 50px; opacity: 100%; border-radius: 5px; background-color: white; padding-left:15px; padding-right: 15px; padding-top: 10px; padding-bottom: 10px;"> -->
-	<!--       <img src="logo_cas.png" style="height: 50px; opacity: 100%; border-radius: 5px; background-color: white; padding: 10px;"> -->
-	<!--     </td> -->
-	<!--   </tr> -->
-	<!--   <tr> -->
-	<!--     <td style="text-align:left; vertical-align: top; font-size: 18px;"> -->
-	<!--       <a href="http://www.strong-2020.eu/">STRONG-2020</a> -->
-	<!--     </td> -->
-	<!--     <td style="width: 45px;"></td> -->
-	<!--     <td style="text-align:left; vertical-align: top; font-size: 18px;"> -->
-	<!--       <a href="https://www.fjfi.cvut.cz/en/">Faculty of Nuclear Sciences and Physical Engineering</a><br /> -->
-	<!--       <a href="https://www.cvut.cz/en/">Czech Technical University in Prague</a> -->
-	<!--     </td> -->
-	<!--     <td style="width: 45px;"></td> -->
-	<!--     <td style="text-align:left; vertical-align: top; font-size: 18px;"> -->
-	<!--       <a href="http://ujf.cas.cz/en/">Nuclear Physics Institute</a><br /> -->
-	<!--       <a href="https://www.avcr.cz/en/">The Czech Academy of Sciences</a> -->
-	<!--     </td> -->
-	<!--   </tr> -->
-	<!--   <tr colspan=5 style="height:15px;"></tr> -->
-	<!--   <tr> -->
-	<!--     <td colspan="5" style="text-align: left; padding-bottom: 5px;"> -->
-	<!--       <img src="logo_FAIR.png" style="height: 60px; opacity: 100%; border-radius: 5px;background-color:white; padding: 5px;"> -->
-	<!--       <img src="logo_EU.jpg" style="height: 70px; opacity: 100%; border-radius: 5px;"> -->
-	<!--       <img src="logo_MSMT.jpg" style="height: 70px; opacity: 100%; border-radius: 5px;"> -->
-	<!--     </td> -->
-	<!--   </tr> -->
-	<!--   <tr> -->
-	<!--     <td colspan="5" style="text-align: left; vertical-align: top; font-size: 18px;"> -->
-	<!--       <a href="https://www.vyzkumne-infrastruktury.cz/en/physic/fair-cz/">FAIR-CZ</a> -->
-	<!--     </td> -->
-	<!--   </tr> -->
-	<!-- </table> -->
-	<!-- No text -->
 	<table style="margin-left: auto; margin-right:auto;">
 	  <tr>
 	    <td style="text-align: left;">
@@ -517,8 +320,6 @@
 	    </td>
 	    <td>
 	      1st HYP announcement
-	      <!-- Web pages of the conference -->
-	      <!-- www pages of the conference -->
 	    </td>
 	  </tr>
 	  <tr class="mute">
@@ -537,8 +338,6 @@
 	    <td class="mute">November</td>
 	    <td  class="mute">IAB meeting<br/>
 	      Call for nominations of invited speakers
-	      <!-- <b>Call for abstracts<br/> -->
-		<!-- Start of registration</b> -->
 	    </td>
 	  </tr>
 	  <tr><td></td><td>December 3</td><td>1st circular<br/>Registration opens<br/>Abstract submission opens</td></tr>
@@ -580,8 +379,6 @@
       </table>
     </div>
 
-    <!-- <footer>xxx</footer> -->
-
     <script>
       document.getElementById("defaultOpen").click();
 
@@ -606,10 +403,3 @@
   </body>
 
 </html>
-
-<!--
-TODOS
-- add favicon
-https://stackoverflow.com/questions/2268204/favicon-dimensions
-- picture prague / some logo / hypernuclei related
--->
