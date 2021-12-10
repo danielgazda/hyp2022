@@ -100,7 +100,7 @@
 	  border: none;
 	  outline: none;
 	  cursor: pointer;
-	  padding: 14px 24px;
+	  padding: 14px 12px;
 	  transition: 0.3s;
 	  font-family: 'Fira Sans Condensed';
 	  font-weight: normal;
@@ -200,7 +200,8 @@
       <button class="tablinks" onclick="displayContent('Organizers', this)"><i class="material-icons md-18">people</i>&nbsp;&nbsp;Organizers</button>
       <button class="tablinks" onclick="displayContent('Dates', this)"><i class="material-icons md-18">event</i>&nbsp;&nbsp;Important dates</button>
       <button class="tablinks" onclick="displayContent('Contact', this)"><i class="material-icons md-18">contact_mail</i>&nbsp;&nbsp;Contact</button>
-      <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/'"><i class="material-icons md-18">launch</i>&nbsp;&nbsp;Indico</button>
+      <!-- <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/'"><i class="material-icons md-18">launch</i>&nbsp;&nbsp;Indico</button> -->
+      <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;Abstract submission</button>
     </div>
 
     <div id="Home" class="tabcontent">
@@ -296,17 +297,18 @@
 	<!-- Pochodzalla -->
 	<!-- The HYP2022 Conference has received support from: -->
 	<ul>
-	  <li><a href="https://bnl.casticova-fyzika.cz/">BNL-CZ</a>, the project MŠMT LM2018109</li>
-	  <li><a href="https://caas.cvut.cz/en/centre-of-advanced-applied-sciences-caas/">Centre
-	  of Advanced Applied Sciences</a> (CAAS), the project with
-	  number CZ.02.1.01/0.0/0.0/16-019/0000778; CAAS is
-	  co-financed by the European Union</li>
-	  <li><a href="http://www.particle.cz/infrastructures/CERN-CZ/en">CERN-CZ</a>, the project MŠMT LM2018104</li>
-	  <li><a href="https://www.vyzkumne-infrastruktury.cz/en/physic/fair-cz/">FAIR-CZ</a>, the project MŠMT LM2018112 and OP VVV
-	    CZ.02.1.01/0.0/0.0/18_046/0016066</li>
 	  <li><a href="http://www.strong-2020.eu/">THEIA-STRONG2020</a>,
 	  the European Union’s Horizon 2020 research and innovation
 	  programme under grant agreement No.&nbsp;824093</li>
+	  <li><a href="https://caas.cvut.cz/en/centre-of-advanced-applied-sciences-caas/">Centre
+	      of Advanced Applied Sciences</a> (CAAS), the project
+	    <!-- with number -->
+	    CZ.02.1.01/0.0/0.0/16-019/0000778; CAAS is
+	  co-financed by the European Union</li>
+	  <li><a href="https://bnl.casticova-fyzika.cz/">BNL-CZ</a>, the project MŠMT LM2018109</li>
+	  <li><a href="http://www.particle.cz/infrastructures/CERN-CZ/en">CERN-CZ</a>, the project MŠMT LM2018104</li>
+	  <li><a href="https://www.vyzkumne-infrastruktury.cz/en/physic/fair-cz/">FAIR-CZ</a>, the project MŠMT LM2018112 and OP VVV
+	    CZ.02.1.01/0.0/0.0/18_046/0016066</li>
 	  <li><a href="https://www.fjfi.cvut.cz/en/">Faculty of Nuclear Sciences and Physical Engineering</a> of
 	    the <a  href="https://www.cvut.cz/en/">Czech Technical University in Prague</a></li>
 	  <li><a href="http://ujf.cas.cz/en/">Nuclear
@@ -316,6 +318,13 @@
 	</ul>
 	<table style="margin-left: auto; margin-right:auto;">
 	  <tr>
+	    <td style="text-align: left;">
+	      <img src="strong2020.png" style="height: 65px; border-radius: 5px;">
+	    </td>
+	    <td  style="text-align: left;">
+	      <img src="logo_caas.png" style="height: 55px; border-radius: 5px; background-color: white; padding: 5px;">
+	      <!-- <img src="logo_cvut_en.jpg" style="height: 55px; border-radius: 5px; background-color: white; padding: 5px;"> -->
+	    </td>
 	    <td>
 	      <!-- <img src="logo_FAIR.png" style="height: 45px; border-radius: 5px;background-color:white; padding: 10px;"> -->
 	      <img src="logo_MSMT.jpg" style="height: 65px; border-radius: 5px;">
@@ -323,15 +332,8 @@
 	    <td  style="text-align: left;">
 	      <img src="logo_EU.jpg" style="height: 65px; border-radius: 5px;">
 	    </td>
-	    <td  style="text-align: left;">
-	      <img src="logo_caas.png" style="height: 55px; border-radius: 5px; background-color: white; padding: 5px;">
-	      <!-- <img src="logo_cvut_en.jpg" style="height: 55px; border-radius: 5px; background-color: white; padding: 5px;"> -->
-	    </td>
 	    <td style="text-align: left;">
 	      <img src="logo_cern-cz.png" style="height: 55px; border-radius: 5px; background-color: white; padding-left:5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
-	    </td>
-	    <td style="text-align: left;">
-	      <img src="strong2020.png" style="height: 65px; border-radius: 5px;">
 	    </td>
 	    <td style="text-align: left;">
 	      <img src="fjfi_logo_oc.png" style="height: 55px; border-radius: 5px; background-color: white; padding: 5px;">
@@ -381,7 +383,7 @@
 	    <td>
 	      1st circular<br/>
 	      Abstract submission opens
-	      <!-- &nbsp;&nbsp;<button onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;Submit abstract</button> -->
+	      &nbsp;&nbsp;<button onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;Submit abstract</button>
 	    </td>
 	  </tr>
 	  <tr><td>2022</td><td>January 14</td><td>Registration opens</td></tr>
