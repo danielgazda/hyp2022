@@ -133,6 +133,8 @@
 	  padding: 5px;
 	  border-radius: 3px;
 	  opacity: 75%;
+	  font-family: 'Fira Sans Condensed';
+	  font-size: 14px;
       }
 
       .dates button:hover {
@@ -176,6 +178,7 @@
 	  width: 100%;
 	  height: 30px;
       }
+
     </style>
   </head>
 
@@ -201,9 +204,11 @@
       <button class="tablinks" onclick="displayContent('Venue', this)"><i class="material-icons md-18">map</i>&nbsp;&nbsp;Venue</button>
       <button class="tablinks" onclick="displayContent('Organizers', this)"><i class="material-icons md-18">people</i>&nbsp;&nbsp;Organizers</button>
       <button class="tablinks" onclick="displayContent('Dates', this)"><i class="material-icons md-18">event</i>&nbsp;&nbsp;Important dates</button>
+      <button class="tablinks" onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;<span style="font-size:18px;">Abstract submission</span></button>
+	<button class="tablinks" onclick="parent.location='https://events.amca.cz/hyp-2022'"><i class="material-icons md-18">launch</i>&nbsp;<span style="font-size:18px;">Registration</span></button>
       <button class="tablinks" onclick="displayContent('Contact', this)"><i class="material-icons md-18">contact_mail</i>&nbsp;&nbsp;Contact</button>
       <!-- <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/'"><i class="material-icons md-18">launch</i>&nbsp;&nbsp;Indico</button> -->
-      <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;Abstract submission</button>
+      <!-- <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;<span style="font-size:18px;">Abstract submission</span></button> -->
     </div>
 
     <div id="Home" class="tabcontent">
@@ -388,7 +393,10 @@
 	      &nbsp;&nbsp;<button onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;Submit abstract</button>
 	    </td>
 	  </tr>
-	  <tr><td>2022</td><td>January 14</td><td>Registration opens</td></tr>
+	  <tr><td>2022</td><td>January 14</td><td>
+	      Registration opens
+	      &nbsp;&nbsp;<button onclick="parent.location='https://events.amca.cz/hyp-2022'"><i class="material-icons md-18">launch</i>&nbsp;Register</button>
+	  </td></tr>
 	  <tr><td></td><td>February 28</td><td>Abstract submission ends</td></tr>
 	  <tr><td></td><td>March 31</td><td>Abstract notification</td></tr>
 	  <tr><td></td><td>May 13</td><td>Registration ends</td></tr>
