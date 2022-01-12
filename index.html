@@ -40,7 +40,7 @@
 
       table.contact td {
 	  vertical-align: top;
-	  padding-bottom: 20px;
+	  padding-bottom: 15px;
 	  padding-left: 30px;
       }
 
@@ -93,6 +93,13 @@
       .tabbar {
 	  overflow: hidden;
 	  background-color: #213649;
+	  /* Horizontal version */
+	  width: 100%;
+	  /* Vertical version */
+	  /* width: 20%; */
+	  /* float: left; */
+	  /* margin-right: 30px; */
+	  /* clear: left; */
       }
 
       .tabbar button {
@@ -108,6 +115,9 @@
 	  font-size: 18px;
 	  margin: 0;
 	  color: #dcdadb;
+	  /* Vertical version */
+	  /* width: 100%; */
+	  /* text-align: left; */
       }
 
       .tabbar button:hover {
@@ -122,6 +132,9 @@
 	  display: none;
 	  padding: 6px 12px;
 	  border-top: none;
+	  /* width: 72%; */
+	  /* float: left; */
+	  /* display: block; */
       }
 
       .dates button {
@@ -170,8 +183,10 @@
 	  width:1024px;
 	  height:130px;
 	  background-size:cover;
-	  float:left;
+	  /* float:left; */
 	  margin-bottom:20px;
+	  display: block;
+	  clear:both;
       }
 
       #bottom_spacing {
@@ -199,7 +214,7 @@
     
     <div id="aw"></div>
 
-    <div class="tabbar" style="width:100%;">
+    <div class="tabbar">
       <button class="tablinks" onclick="displayContent('Home', this)" id="defaultOpen"><i class="material-icons md-18">home</i>&nbsp;&nbsp;Home</button>
       <button class="tablinks" onclick="displayContent('Venue', this)"><i class="material-icons md-18">map</i>&nbsp;&nbsp;Venue</button>
       <button class="tablinks" onclick="displayContent('Organizers', this)"><i class="material-icons md-18">people</i>&nbsp;&nbsp;Organizers</button>
@@ -212,7 +227,7 @@
     </div>
 
     <div id="Home" class="tabcontent">
-      
+
       <h1>Welcome</h1>
       <p>
 	The 14th International Conference on Hypernuclear and Strange
@@ -421,8 +436,9 @@
     </div>
 
     <div id="Contact" class="tabcontent">
-      <h1>Contact</h1>
-      <table class="contact">
+      <!-- <h1>Contact</h1> -->
+      <h1>Scientific program</h1>
+      <p><table class="contact">
 	<tr>
 	  <td><i class="material-icons md-18">local_post_office</i>&nbsp;&nbsp;Address:</td>
 	  <td>Jiri Mares &ndash; HYP2022<br/>
@@ -442,6 +458,26 @@
 	<tr>
 	  <td><i class="material-icons md-18">email</i>&nbsp;&nbsp;E-mail:</td>
 	  <td>hyp2022@ujf.cas.cz</td>
+	</tr>
+      </table>
+      <h1>Registration and information &ndash; secretariat of the conference</h1>
+      <p><table class="contact">
+	<tr>
+	  <td><i class="material-icons md-18">local_post_office</i>&nbsp;&nbsp;Address:</td>
+	  <td>AMCA, spol. s r. o.<br>
+	    Academic and Medical Conference Agency<br>
+	    Vyšehradská 320/49<br>
+	    128 00 Prague 2<br>
+	    Czech Republic
+	  </td>
+	</tr>
+	<tr>
+	  <td><i class="material-icons md-18">call</i>&nbsp;&nbsp;Phone:</td>
+	  <td>+420 737 357 159</td>
+	</tr>
+	<tr>
+	  <td><i class="material-icons md-18">email</i>&nbsp;&nbsp;E-mail:</td>
+	  <td>kinc@amca.cz</td>
 	</tr>
       </table>
     </div>
