@@ -13,13 +13,15 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@900&display=swap" rel="stylesheet">
     <style>
-      
+
       html {
-	  background-image: linear-gradient(to bottom right, #e6dfd5, #e4e4e4, #e4e4e4);
-	  min-height: 100%;
+	  /* background-image: linear-gradient(to bottom right, #e6dfd5, #e4e4e4, #e4e4e4); */
 	  min-width: 1024px;
+	  background-color: #3b3e45;
+	  height: 100%;
+	  min-height: 100%;
       }
-      
+
       p {
 	  line-height: 1.5;
 	  text-align: justify;
@@ -29,11 +31,11 @@
 	  list-style-type: square;
 	  line-height: 1.5;
       }
-      
+
       a {
 	  color: #42687d;
       }
-      
+
       table.contact {
 	  border: 0px;
       }
@@ -80,7 +82,7 @@
       table.dates tr:nth-child(4) {
 	  opacity: 1;
       }
-      
+
       body {
 	  font-family: 'Fira Sans Condensed';
 	  font-size: 20px;
@@ -88,46 +90,103 @@
 	  width: 1024px;
 	  margin: auto;
 	  color: #26304b;
+	  padding-left: 30px;
+	  padding-right: 30px;
+	  min-height: 100%;
+	  background-image: linear-gradient(to bottom right, #e6dfd5, #e4e4e4, #e4e4e4);
       }
-	  
+
       .tabbar {
 	  overflow: hidden;
 	  background-color: #213649;
-	  /* Horizontal version */
 	  width: 100%;
-	  /* Vertical version */
-	  /* width: 20%; */
-	  /* float: left; */
-	  /* margin-right: 30px; */
-	  /* clear: left; */
       }
 
-      .tabbar button {
+      #menubar {
+	  font-size:0;
+	  width=100%;
+	  background-color: #213649;
+      }
+
+      .tablinks{
 	  background-color: inherit;
-	  float: left;
 	  border: none;
 	  outline: none;
 	  cursor: pointer;
-	  padding: 14px 12px;
+	  padding: 14px 18px;
 	  transition: 0.3s;
 	  font-family: 'Fira Sans Condensed';
 	  font-weight: normal;
 	  font-size: 18px;
-	  margin: 0;
+	  margin: 0px;
 	  color: #dcdadb;
-	  /* Vertical version */
-	  /* width: 100%; */
-	  /* text-align: left; */
       }
+
+      #menubar button:hover {background-color: #42687d;}
+
+      /* .tabbar button { */
+      /* 	  background-color: inherit; */
+      /* 	  /\* float: left; *\/ */
+      /* 	  border: none; */
+      /* 	  outline: none; */
+      /* 	  cursor: pointer; */
+      /* 	  padding: 14px 12px; */
+      /* 	  transition: 0.3s; */
+      /* 	  font-family: 'Fira Sans Condensed'; */
+      /* 	  font-weight: normal; */
+      /* 	  font-size: 18px; */
+      /* 	  margin: 0px; */
+      /* 	  color: #dcdadb; */
+      /* } */
 
       .tabbar button:hover {
 	  background-color: #42687d;
       }
-      
+
       .tabbar button.active {
 	  background-color: #42687d;
       }
-      
+
+      #menubar button.active {
+	  background-color: #42687d;
+      }
+
+      .dropdown {
+	  position: relative;
+	  display: inline-block;
+	  margin: 0px;
+	  padding: 0px;
+      }
+
+      .dropdown-content {
+	  /* display: block; */
+	  display: none;
+	  background-color: #213649;
+	  position: absolute;
+	  z-index: 1;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
+
+      .dropdown-content button {
+	  background-color: inherit;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-family: 'Fira Sans Condensed';
+	  font-weight: normal;
+	  font-size: 17px;
+	  margin: 0px;
+	  color: #dcdadb;
+	  width: 100%;
+	  text-align: left;
+      }
+
+      .dropdown-content button:hover {background-color: #42687d;}
+      .dropdown:hover .dropdown-content {display: block;}
+      .dropdown:hover .dropdown {backgroud-color: #42687d;}
+
       .tabcontent {
 	  display: none;
 	  padding: 6px 12px;
@@ -161,16 +220,21 @@
 	  font-size: 32px;
       }
 
+      h2 {
+	  font-weight: 400;
+	  font-size: 28px;
+      }
+
       #header1 {
 	  font-family: 'Fira Sans Extra Condensed';
 	  padding-bottom:20px;
-	  padding-top:20px;
+	  padding-top:30px;
 	  display:block;
 	  float:left;
 	  width:19%;
 	  color: #213649;
       }
-      
+
       #header2 {
 	  float:left;
 	  width:81%;
@@ -194,6 +258,8 @@
 	  height: 30px;
       }
 
+      .hidden {display:none;}
+
     </style>
   </head>
 
@@ -206,24 +272,68 @@
       </div>
 
       <div id="header2">
-	<div style="margin-left:40px;margin-top:40px;font-size:34px;">14th International Conference on Hypernuclear and Strange Particle Physics</div>
+	<div style="margin-left:40px;margin-top:50px;font-size:34px;">14th International Conference on Hypernuclear and Strange Particle Physics</div>
 	<div style="margin-left:40px;margin-top:20px;padding-top:8px;font-size:26px;">June&nbsp;27&nbsp;&ndash;&nbsp;July&nbsp;1,&nbsp;2022</div>
 	<div style="margin-left:40px;margin-top:5px;padding-top:0px;font-size:26px;line-height:0.7;">Prague, Czech Republic</div>
       </div>
     </div>
-    
+
     <div id="aw"></div>
 
-    <div class="tabbar">
-      <button class="tablinks" onclick="displayContent('Home', this)" id="defaultOpen"><i class="material-icons md-18">home</i>&nbsp;&nbsp;Home</button>
-      <button class="tablinks" onclick="displayContent('Venue', this)"><i class="material-icons md-18">map</i>&nbsp;&nbsp;Venue</button>
-      <button class="tablinks" onclick="displayContent('Organizers', this)"><i class="material-icons md-18">people</i>&nbsp;&nbsp;Organizers</button>
+    <!--   <button class="tablinks" onclick="displayContent('Venue', this)"><i class="material-icons md-18">map</i>&nbsp;&nbsp;Venue</button> -->
+    <!--   <button class="tablinks" onclick="displayContent('Organizers', this)"><i class="material-icons md-18">people</i>&nbsp;&nbsp;Organizers</button> -->
+    <!--   <button class="tablinks" onclick="window.open('https://indico.cern.ch/event/896088/abstracts/)'"><i class="material-icons md-18">launch</i>&nbsp;<span style="font-size:18px;">Abstract submission</span></button> -->
+    <!-- 	 -->
+    <!--    -->
+    <!--   <\!-- <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/'"><i class="material-icons md-18">launch</i>&nbsp;&nbsp;Indico</button> -\-> -->
+    <!--   <\!-- <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;<span style="font-size:18px;">Abstract submission</span></button> -\-> -->
+    <!-- </div> -->
+
+    <div id="menubar">
+      <button class="tablinks" onclick="displayContent('Home', this)" id="defaultOpen"><i class="material-icons md-18">home</i>&nbsp;&nbsp;Welcome</button>
+
       <button class="tablinks" onclick="displayContent('Dates', this)"><i class="material-icons md-18">event</i>&nbsp;&nbsp;Important dates</button>
-      <button class="tablinks" onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;<span style="font-size:18px;">Abstract submission</span></button>
-	<button class="tablinks" onclick="parent.location='https://events.amca.cz/hyp-2022'"><i class="material-icons md-18">launch</i>&nbsp;<span style="font-size:18px;">Registration</span></button>
-      <button class="tablinks" onclick="displayContent('Contact', this)"><i class="material-icons md-18">contact_mail</i>&nbsp;&nbsp;Contact</button>
-      <!-- <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/'"><i class="material-icons md-18">launch</i>&nbsp;&nbsp;Indico</button> -->
-      <!-- <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;<span style="font-size:18px;">Abstract submission</span></button> -->
+
+      <div class="dropdown">
+	<button id="button_Organization" class="tablinks"><i class="material-icons md-18">people</i>&nbsp;&nbsp;Organization<i class="material-icons md-18">arrow_drop_down</i></button>
+	<div class="dropdown-content">
+	  <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_loc').scrollIntoView()">Committees</button>
+	  <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_hosts').scrollIntoView()">Hosts</button>
+	  <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_support').scrollIntoView()">Sponsors</button>
+	  <button onclick="window.open('HYP2022_1st_circular.pdf')">1st circular (pdf</a>)</button>
+	  <button onclick="window.open('HYP2022_poster.pdf')">Poster (pdf</a>)</button>
+	  <button onclick="displayContent('Contact', document.getElementById('button_Organization'))">Contact</button>
+	</div>
+      </div>
+
+      <div class="dropdown">
+	<button id="button_Registration" class="tablinks"><i class="material-icons md-18">how_to_reg</i>&nbsp;&nbsp;Abstracts & registration<i class="material-icons md-18">arrow_drop_down</i></button>
+	<div class="dropdown-content">
+	  <button class="tablinks" onclick="window.open('https://indico.cern.ch/event/896088/abstracts/')">Abstract&nbsp;submission</button>
+	  <button class="tablinks" onclick="window.open('https://events.amca.cz/hyp-2022')">Registration</button>
+	  <button class="tablinks" onclick="displayContent('Support', document.getElementById('button_Registration'))">Support</button>
+	  <button class="tablinks" onclick="displayContent('Visa', document.getElementById('button_Registration'))">Visa</button>
+	</div>
+      </div>
+
+      <div class="dropdown">
+	<button id="button_Program" class=" hidden tablinks"><i class="material-icons md-18">menu_book</i>&nbsp;&nbsp;Program<i class="material-icons md-18">arrow_drop_down</i></button>
+	<div class="dropdown-content">
+	  <button class="hidden tablinks" onclick="">Abstract submission</span></button>
+	</div>
+      </div>
+
+      <div class="dropdown">
+	<button id="button_Travel" class="tablinks"><i class="material-icons md-18">map</i>&nbsp;&nbsp;Travel & lodging<i class="material-icons md-18">arrow_drop_down</i></button>
+	<div class="dropdown-content">
+	  <button class="tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_venue').scrollIntoView()">Venue</button>
+	  <button class="tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_accommodation').scrollIntoView()">Accommodation</button>
+	  <button class="hidden tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_travel_info').scrollIntoView()">Travel information</button>
+	  <button class="hidden tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_local_info').scrollIntoView()">Local information</button>
+	</div>
+      </div>
+
+      <!-- <button class="tablinks" onclick="displayContent('Contact', this)"><i class="material-icons md-18">contact_mail</i>&nbsp;&nbsp;Contact</button> -->
     </div>
 
     <div id="Home" class="tabcontent">
@@ -241,7 +351,7 @@
 	(2018).
       </p>
 
-      <p> 
+      <p>
 	Topics to be discussed at the conference include
 	<ul>
 	  <li>Production, structure and decay of hypernuclei</li>
@@ -266,12 +376,12 @@
       </p>
       <p>The Conference will be preceded by the <a href="http://rafael.ujf.cas.cz/school/">Indian-Summer School of Physics</a>.</p>
       <p>
-	We cordially invite you to participate and contribute to the scientific program of the Conference. 
-      </p>	
+	We cordially invite you to participate and contribute to the scientific program of the Conference.
+      </p>
     </div>
 
     <div id="Venue" class="tabcontent">
-      <h1>Venue</h1>
+      <h1 id="h1_venue">Venue</h1>
       <img style="margin-left:30px;float:right;height:280px; border-radius: 10px;" src="./pyramida1.jpg">
       <p>
 	The Conference will take place in
@@ -280,23 +390,34 @@
 	the meeting. The hotel is located in a walking distance to
 	Prague Castle and historical parts of the town.
       </p>
+      <h1 id="h1_accommodation">Accommodation</h1>
       <p>
 	Participants will be accommodated in OREA Hotel Pyramida.
 	Alternative accommodation including Academy and University
 	hotels and student residences will be available as well.
       </p>
 
+      <h1 class="hidden" id="h1_travel_info">Travel information</h1>
+      <p class="hidden">
+	TBA
+      </p>
+
+      <h1 class="hidden" id="h1_local_info">Local information</h1>
+      <p class="hidden">
+	TBA
+      </p>
+
     </div>
 
     <div id="Organizers" class="tabcontent">
-      <h1>Local Organizing Committee</h1>
+      <h1 id="h1_loc">Local Organizing Committee</h1>
       <p>
 	<ul>
 	  <li>J. Bielčíková, P. Bydžovský, A. Cieplý, D. Gazda, F. Křížek, J. Mareš, D. Skoupil, P. Tlustý (NPI Řež)</li>
 	  <li>J. Bielčík,  J. Óbertová; B. Tomášik (FNSPE CTU in Prague)</li>
       </ul></p>
 
-      <h1>Hosts</h1>
+      <h1 id="h1_hosts">Hosts</h1>
       <p>
 	<table>
 	  <tr>
@@ -308,13 +429,13 @@
 	</table>
       </p>
 
-      <h1>International Advisory Board</h1>
+      <h1 id="h1_iac">International Advisory Committee</h1>
       <p>
 	E. Botta (Torino), T. Bressani (Torino), H. Caines (Yale), C. Curceanu (Frascati), L. Fabbietti (Munich), A. Feliciello (Torino), A.&nbsp;Gal (Jerusalem), B.&nbsp;F.&nbsp;Gibson (Los Alamos), J.&nbsp;Haidenbauer (Juelich), E.&nbsp;Hiyama (Tohoku), T.&nbsp;Kishimoto (Osaka), H.&nbsp;Lenske (Giessen), Yu-Gang Ma (Shanghai), J.&nbsp;Mareš (Řež), D.&nbsp;J.&nbsp;Millener (BNL), T.&nbsp;Motoba (Osaka), T.&nbsp;Nagae (Kyoto), S.&nbsp;N.&nbsp;Nakamura (Tohoku), H.&nbsp;Noumi (RCNP), M.&nbsp;Oka (Tokyo), E.&nbsp;Oset (Valencia), A.&nbsp;Parreño (Barcelona), J.&nbsp;Pochodzalla (Mainz), À.&nbsp;Ramos (Barcelona), R.&nbsp;Schumacher (CMU), H.&nbsp;Tamura (Tohoku), L.&nbsp;Tang (Hampton), I.&nbsp;Vidaña (Catania), T.&nbsp;Yamazaki (Tokyo), Shi-Lin Zhu (Beijing), Bing-Song Zou (Beijing)
 
       </p>
 
-      <h1>Support</h1>
+      <h1 id="h1_support">Support</h1>
       <p>
 	<!-- Pochodzalla -->
 	<!-- The HYP2022 Conference has received support from: -->
@@ -411,12 +532,12 @@
 	    <td>
 	      1st circular (<a href="HYP2022_1st_circular.pdf"><i class="material-icons md-18">article</i>&nbsp;pdf</a>)<br/>
 	      Abstract submission opens
-	      &nbsp;&nbsp;<button onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;Submit abstract</button>
+	      &nbsp;&nbsp;<button onclick="windown.open('https://indico.cern.ch/event/896088/abstracts/')"><i class="material-icons md-18">launch</i>&nbsp;Submit abstract</button>
 	    </td>
 	  </tr>
 	  <tr><td>2022</td><td>January 14</td><td>
 	      Registration opens
-	      &nbsp;&nbsp;<button onclick="parent.location='https://events.amca.cz/hyp-2022'"><i class="material-icons md-18">launch</i>&nbsp;Register</button>
+	      &nbsp;&nbsp;<button onclick="window.open('https://events.amca.cz/hyp-2022')"><i class="material-icons md-18">launch</i>&nbsp;Register</button>
 	  </td></tr>
 	  <tr><td></td><td>February 28</td><td>Abstract submission ends</td></tr>
 	  <tr><td></td><td>March 31</td><td>Abstract notification</td></tr>
@@ -436,8 +557,8 @@
     </div>
 
     <div id="Contact" class="tabcontent">
-      <!-- <h1>Contact</h1> -->
-      <h1>Scientific program</h1>
+      <h1>Contact</h1>
+      <h2>Scientific program</h2>
       <p><table class="contact">
 	<tr>
 	  <td><i class="material-icons md-18">local_post_office</i>&nbsp;&nbsp;Address:</td>
@@ -452,15 +573,15 @@
 	  <td>+420 266 173 283</td>
 	</tr>
 	<tr>
-	  <td><i class="material-icons md-18">fax</i>&nbsp;&nbsp;Fax:</td>
-	  <td>+420 220 940 165</td>
-	</tr>
-	<tr>
+	<!--   <td><i class="material-icons md-18">fax</i>&nbsp;&nbsp;Fax:</td> -->
+	<!--   <td>+420 220 940 165</td> -->
+	<!-- </tr> -->
+	<!-- <tr> -->
 	  <td><i class="material-icons md-18">email</i>&nbsp;&nbsp;E-mail:</td>
 	  <td>hyp2022@ujf.cas.cz</td>
 	</tr>
       </table>
-      <h1>Registration and information &ndash; secretariat of the conference</h1>
+      <h2 id="h2_AMCA">Registration and information &ndash; secretariat of the conference</h2>
       <p><table class="contact">
 	<tr>
 	  <td><i class="material-icons md-18">local_post_office</i>&nbsp;&nbsp;Address:</td>
@@ -473,13 +594,31 @@
 	</tr>
 	<tr>
 	  <td><i class="material-icons md-18">call</i>&nbsp;&nbsp;Phone:</td>
-	  <td>+420 737 357 159</td>
+	  <td>+420 731 496 062</td>
 	</tr>
 	<tr>
 	  <td><i class="material-icons md-18">email</i>&nbsp;&nbsp;E-mail:</td>
-	  <td>kinc@amca.cz</td>
+	  <td>uher@amca.cz</td>
 	</tr>
       </table>
+    </div>
+
+    <div id="Support" class="tabcontent">
+      <h1>Support</h1>
+      <p>Thanks to THEIA-STRONG2020, CAAS, BNL-CZ, CERN-CZ, and
+      FAIR-CZ kind sponsorship, we will be able to provide some
+      financial assistance, particularly to graduate students.
+      Requests for the support should be addressed to the local
+      organizing committee.</p>
+    </div>
+    
+    <div id="Visa" class="tabcontent">
+      <h1>Visa</h1>
+      <p>Citizens of some countries might require a visa to enter the
+	Czech Republic.
+	Please <a href="https://www.mzv.cz/jnp/en/information_for_aliens/short_stay_visa/list_of_states_whose_citizens_are/index.html">check
+	your case</a> and start the process early enough. Contact us
+	if you need a letter of invitation to obtain your visa.</p>
     </div>
 
     <script>
@@ -491,12 +630,12 @@
       // Get all elements with class="tabcontent" and hide them
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+	  tabcontent[i].style.display = "none";
       }
       // Get all elements with class = "tablinks" and remove the class " active"
       tablinks = document.getElementsByClassName("tablinks");
       for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
       // Show the current tab and add an "active" class to the button that opened the tab
       document.getElementById(tab).style.display = "block";
