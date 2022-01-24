@@ -183,6 +183,15 @@
 	  text-align: left;
       }
 
+      .dropdown-divider {
+	  height: 1px;
+	  border-width: 0px;
+	  width: 80%;
+	  color: #dcdadb;
+	  background-color: #dcdadb;
+	  opacity: 0.3;
+      }
+
       .dropdown-content button:hover {background-color: #42687d;}
       .dropdown:hover .dropdown-content {display: block;}
       .dropdown:hover .dropdown {backgroud-color: #42687d;}
@@ -277,17 +286,8 @@
 	<div style="margin-left:40px;margin-top:5px;padding-top:0px;font-size:26px;line-height:0.7;">Prague, Czech Republic</div>
       </div>
     </div>
-
+    
     <div id="aw"></div>
-
-    <!--   <button class="tablinks" onclick="displayContent('Venue', this)"><i class="material-icons md-18">map</i>&nbsp;&nbsp;Venue</button> -->
-    <!--   <button class="tablinks" onclick="displayContent('Organizers', this)"><i class="material-icons md-18">people</i>&nbsp;&nbsp;Organizers</button> -->
-    <!--   <button class="tablinks" onclick="window.open('https://indico.cern.ch/event/896088/abstracts/)'"><i class="material-icons md-18">launch</i>&nbsp;<span style="font-size:18px;">Abstract submission</span></button> -->
-    <!-- 	 -->
-    <!--    -->
-    <!--   <\!-- <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/'"><i class="material-icons md-18">launch</i>&nbsp;&nbsp;Indico</button> -\-> -->
-    <!--   <\!-- <button class="tablinks" style="float:right;" onclick="parent.location='https://indico.cern.ch/event/896088/abstracts/'"><i class="material-icons md-18">launch</i>&nbsp;<span style="font-size:18px;">Abstract submission</span></button> -\-> -->
-    <!-- </div> -->
 
     <div id="menubar">
       <button class="tablinks" onclick="displayContent('Home', this)" id="defaultOpen"><i class="material-icons md-18">home</i>&nbsp;&nbsp;Welcome</button>
@@ -297,11 +297,14 @@
       <div class="dropdown">
 	<button id="button_Organization" class="tablinks"><i class="material-icons md-18">people</i>&nbsp;&nbsp;Organization<i class="material-icons md-18">arrow_drop_down</i></button>
 	<div class="dropdown-content">
-	  <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_loc').scrollIntoView()">Committees</button>
-	  <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_hosts').scrollIntoView()">Hosts</button>
-	  <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_support').scrollIntoView()">Sponsors</button>
-	  <button onclick="window.open('HYP2022_1st_circular.pdf')">1st circular (pdf</a>)</button>
-	  <button onclick="window.open('HYP2022_poster.pdf')">Poster (pdf</a>)</button>
+	  <button onclick="displayContent('Organizers', document.getElementById('button_Organization'))">Committees,&nbsp;hosts<br>and&nbsp;sponsors</button>
+	  <hr class="dropdown-divider">
+	  <!-- <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_loc').scrollIntoView()">Committees</button> -->
+	  <!-- <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_hosts').scrollIntoView()">Hosts</button> -->
+	  <!-- <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_support').scrollIntoView()">Sponsors</button> -->
+	  <button onclick="window.open('HYP2022_1st_circular.pdf')">1st circular (pdf)</button>
+	  <button onclick="window.open('HYP2022_poster.pdf')">Poster (pdf)</button>
+	  <hr class="dropdown-divider">
 	  <button onclick="displayContent('Contact', document.getElementById('button_Organization'))">Contact</button>
 	</div>
       </div>
@@ -309,10 +312,25 @@
       <div class="dropdown">
 	<button id="button_Registration" class="tablinks"><i class="material-icons md-18">how_to_reg</i>&nbsp;&nbsp;Abstracts & registration<i class="material-icons md-18">arrow_drop_down</i></button>
 	<div class="dropdown-content">
-	  <button class="tablinks" onclick="window.open('https://indico.cern.ch/event/896088/abstracts/')">Abstract&nbsp;submission</button>
-	  <button class="tablinks" onclick="window.open('https://events.amca.cz/hyp-2022')">Registration</button>
-	  <button class="tablinks" onclick="displayContent('Support', document.getElementById('button_Registration'))">Support</button>
-	  <button class="tablinks" onclick="displayContent('Visa', document.getElementById('button_Registration'))">Visa</button>
+	  <button class="tablinks" onclick="window.open('https://indico.cern.ch/event/896088/abstracts/')">
+	    Abstract&nbsp;submission
+	  </button>
+	  <button class="tablinks" onclick="window.open('https://events.amca.cz/hyp-2022')">
+	    Registration
+	  </button>
+	  <button class="tablinks" onclick="displayContent('Support', document.getElementById('button_Registration'))">
+	    Support
+	  </button>
+	  <button class="tablinks" onclick="displayContent('Visa', document.getElementById('button_Registration'))">
+	    Visa
+	  </button>
+	  <hr class="dropdown-divider">
+	  <button class="tablinks" onclick="window.open('https://events.amca.cz/hyp-2022/Registration%20form/list?lang=en')">
+	    Participants&nbsp;list
+	  </button>
+	  <button class="tablinks" onclick="window.open('https://indico.cern.ch/event/896088/contributions/')">
+	    Contributions&nbsp;list
+	  </button>
 	</div>
       </div>
 
