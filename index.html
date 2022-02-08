@@ -206,7 +206,7 @@
 	  /* display: block; */
       }
 
-      .dates button {
+      .action-button {
 	  color: #dcdadb;
 	  background-color: #213649;
 	  border: none;
@@ -313,10 +313,10 @@
       <div class="dropdown">
 	<button id="button_Registration" class="tablinks"><i class="material-icons md-18">how_to_reg</i>&nbsp;&nbsp;Abstracts & registration<i class="material-icons md-18">arrow_drop_down</i></button>
 	<div class="dropdown-content">
-	  <button class="tablinks" onclick="window.open('https://indico.cern.ch/event/896088/abstracts/')">
+	  <button class="tablinks" onclick="window.open('https://indico.cern.ch/event/896088/abstracts/')"><i class="material-icons md-18">launch</i>&nbsp;
 	    Abstract&nbsp;submission
 	  </button>
-	  <button class="tablinks" onclick="window.open('https://events.amca.cz/hyp-2022')">
+	  <button class="tablinks" onclick="window.open('https://events.amca.cz/hyp-2022')"><i class="material-icons md-18">launch</i>&nbsp;
 	    Registration
 	  </button>
 	  <button class="tablinks" onclick="displayContent('Support', document.getElementById('button_Registration'))">
@@ -411,9 +411,14 @@
       </p>
       <h1 id="h1_accommodation">Accommodation</h1>
       <p>
-	Participants will be accommodated in OREA Hotel Pyramida.
-	Alternative accommodation including Academy and University
-	hotels and student residences will be available as well.
+	A room block has been reserved in OREA Hotel Pyramida.
+	<br />The HYP2022 rate (per night) is:<br />
+	<a href="https://www.hotelpyramida.cz/en/rooms/">Deluxe room</a> - 1890 CZK
+	(single) 2090 CZK (double), <br />
+	<a href="https://www.hotelpyramida.cz/en/rooms/">Executive room</a> - 2100 CZK (single)
+	2300 CZK (double). <br /> The prices include services (breakfast,
+	WIFI, free entry to a swimming pool and fitness center) and taxes
+	(VAT, local service tax, city tax). &nbsp;&nbsp;<button class="action-button" onclick="window.open('https://www.book-secure.com/index.php?s=results&group=czpyramida&property=czpra31278&arrival=2022-06-26&departure=2022-06-27&code=HYP2022&adults1=1&children1=0&locale=en_GB&currency=CZK&stid=tpce499jw&showPromotions=3&Hotelnames=CZPRAHTLOreaPyramida&hname=CZPRAHTLOreaPyramida&Clusternames=czpyramida&cluster=czpyramida&adulteresa=2&nbAdultsValue=2&arrivalDateValue=2021-10-04&frommonth=10&fromday=04&fromyear=2021&departureDateValue=2021-10-08&tomonth=10&today=08&toyear=2021&check_in=04/10/21&check_out=08/10/21&AccessCode=HYP2021&accessCode=HYP2021&_ga=2.127606158.2037871260.1596723876-1652476674.1589283391&redir=BIZ-so5523q0o4&rt=1596724402')"><i class="material-icons md-18">launch</i>&nbsp;Click&nbsp;here&nbsp;for&nbsp;reservation.</button>
       </p>
 
       <h1 class="hidden" id="h1_travel_info">Travel information</h1>
@@ -551,12 +556,12 @@
 	    <td>
 	      1st circular (<a href="HYP2022_1st_circular.pdf"><i class="material-icons md-18">article</i>&nbsp;pdf</a>)<br/>
 	      Abstract submission opens
-	      &nbsp;&nbsp;<button onclick="windown.open('https://indico.cern.ch/event/896088/abstracts/')"><i class="material-icons md-18">launch</i>&nbsp;Submit abstract</button>
+	      &nbsp;&nbsp;<button class="action-button" onclick="windown.open('https://indico.cern.ch/event/896088/abstracts/')"><i class="material-icons md-18">launch</i>&nbsp;Submit&nbsp;abstract</button>
 	    </td>
 	  </tr>
 	  <tr><td>2022</td><td>January 14</td><td>
 	      Registration opens
-	      &nbsp;&nbsp;<button onclick="window.open('https://events.amca.cz/hyp-2022')"><i class="material-icons md-18">launch</i>&nbsp;Register</button>
+	      &nbsp;&nbsp;<button class="action-button" onclick="window.open('https://events.amca.cz/hyp-2022')"><i class="material-icons md-18">launch</i>&nbsp;Register</button>
 	  </td></tr>
 	  <tr><td></td><td>February 28</td><td>Abstract submission ends</td></tr>
 	  <tr><td></td><td>March 31</td><td>Abstract notification</td></tr>
