@@ -299,11 +299,13 @@
 	<button id="button_Organization" class="tablinks"><i class="material-icons md-18">people</i>&nbsp;&nbsp;Organization<i class="material-icons md-18">arrow_drop_down</i></button>
 	<div class="dropdown-content">
 	  <button onclick="displayContent('Organizers', document.getElementById('button_Organization'))">Committees,&nbsp;hosts<br>and&nbsp;sponsors</button>
+	  <button onclick="displayContent('Proceedings', document.getElementById('button_Organization'))">Proceedings</button>
 	  <hr class="dropdown-divider">
 	  <!-- <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_loc').scrollIntoView()">Committees</button> -->
 	  <!-- <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_hosts').scrollIntoView()">Hosts</button> -->
 	  <!-- <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_support').scrollIntoView()">Sponsors</button> -->
 	  <button onclick="window.open('HYP2022_1st_circular.pdf')">1st circular (pdf)</button>
+	  <!-- <button onclick="window.open('HYP2022_2nd_circular.pdf')">1st circular (pdf)</button> -->
 	  <button onclick="window.open('HYP2022_poster.pdf')">Poster (pdf)</button>
 	  <hr class="dropdown-divider">
 	  <button onclick="displayContent('Contact', document.getElementById('button_Organization'))">Contact</button>
@@ -351,9 +353,8 @@
 	  <button class="hidden tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_local_info').scrollIntoView()">Local information</button>
 	</div>
       </div>
-
       <!-- <button class="tablinks" onclick="displayContent('Contact', this)"><i class="material-icons md-18">contact_mail</i>&nbsp;&nbsp;Contact</button> -->
-    </div>
+</div>
 
     <div id="Home" class="tabcontent">
 
@@ -387,15 +388,15 @@
       </p>
 
       <p>
-	The HYP2022 Conference will be hosted by
+	The HYP2022 conference will be hosted by
 	<ul>
 	  <li><a href="http://ujf.cas.cz/en/">Nuclear Physics Institute, Czech Academy of Sciences, Řež</a> </li>
 	  <li><a href="https://www.fjfi.cvut.cz/en/">Faculty of Nuclear Sciences and Physical Engineering, Czech Technical University in Prague</a> </li>
 	</ul>
       </p>
-      <p>The Conference will be preceded by the <a href="http://rafael.ujf.cas.cz/school/">Indian-Summer School of Physics</a>.</p>
+      <p>The conference will be preceded by the <a href="http://rafael.ujf.cas.cz/school/">Indian-Summer School of Physics</a>.</p>
       <p>
-	We cordially invite you to participate and contribute to the scientific program of the Conference.
+	We cordially invite you to participate and contribute to the scientific program of the conference.
       </p>
     </div>
 
@@ -403,7 +404,7 @@
       <h1 id="h1_venue">Venue</h1>
       <img style="margin-left:30px;float:right;height:280px; border-radius: 10px;" src="./pyramida1.jpg">
       <p>
-	The Conference will take place in
+	The conference will take place in
 	<a href="https://www.hotelpyramida.cz/en/">OREA Hotel
 	Pyramida</a> which provides suitable working conditions for
 	the meeting. The hotel is located in a walking distance to
@@ -644,6 +645,15 @@
 	your case</a> and start the process early enough. Contact us
 	if you need a letter of invitation to obtain your visa.</p>
     </div>
+
+    <div id="Proceedings" class="tabcontent">
+      <h1>Proceedings</h1>
+      <p>The conference proceedings including peer-reviewed oral
+	presentations will be published online as Open Access in EPJ
+	Web of Conferences.</p>
+      <p>Detailed instructions will be provided during the conference.
+    </div>
+
 
     <script>
       document.getElementById("defaultOpen").click();
