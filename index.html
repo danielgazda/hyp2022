@@ -219,7 +219,7 @@
 	  font-size: 14px;
       }
 
-      .dates button:hover {
+      .action-button:hover {
 	  background-color: #42687d;
       }
 
@@ -315,10 +315,10 @@
       <div class="dropdown">
 	<button id="button_Registration" class="tablinks"><i class="material-icons md-18">how_to_reg</i>&nbsp;&nbsp;Abstracts & registration<i class="material-icons md-18">arrow_drop_down</i></button>
 	<div class="dropdown-content">
-	  <button class="tablinks" onclick="window.open('https://indico.cern.ch/event/896088/abstracts/')"><i class="material-icons md-18">launch</i>&nbsp;
+	  <button class="tablinks" onclick="displayContent('Abstract_submission', document.getElementById('button_Registration'))">
 	    Abstract&nbsp;submission
 	  </button>
-	  <button class="tablinks" onclick="window.open('https://events.amca.cz/hyp-2022')"><i class="material-icons md-18">launch</i>&nbsp;
+	  <button class="tablinks" onclick="displayContent('Registration', document.getElementById('button_Registration'))">
 	    Registration
 	  </button>
 	  <button class="tablinks" onclick="displayContent('Support', document.getElementById('button_Registration'))">
@@ -398,6 +398,15 @@
       <p>
 	We cordially invite you to participate and contribute to the scientific program of the conference.
       </p>
+      <p>
+	The COVID-19 pandemic generated significant perturbations in
+	our lives last years. In view of current favorable prognoses,
+	we are optimistic that the world will recover soon, making it
+	possible to organize the HYP2022 conference in person.
+	Nonetheless, the situation will be reassessed during April and
+	a hybrid form of the conference will be considered.
+      </p>
+      <div id="bottom_spacing"></div>
     </div>
 
     <div id="Venue" class="tabcontent">
@@ -419,8 +428,10 @@
 	<a href="https://www.hotelpyramida.cz/en/rooms/">Executive room</a> - 2100 CZK (single)
 	2300 CZK (double). <br /> The prices include services (breakfast,
 	WIFI, free entry to a swimming pool and fitness center) and taxes
-	(VAT, local service tax, city tax). &nbsp;&nbsp;<button class="action-button" onclick="window.open('https://www.book-secure.com/index.php?s=results&group=czpyramida&property=czpra31278&arrival=2022-06-26&departure=2022-06-27&code=HYP2022&adults1=1&children1=0&locale=en_GB&currency=CZK&stid=tpce499jw&showPromotions=3&Hotelnames=CZPRAHTLOreaPyramida&hname=CZPRAHTLOreaPyramida&Clusternames=czpyramida&cluster=czpyramida&adulteresa=2&nbAdultsValue=2&arrivalDateValue=2021-10-04&frommonth=10&fromday=04&fromyear=2021&departureDateValue=2021-10-08&tomonth=10&today=08&toyear=2021&check_in=04/10/21&check_out=08/10/21&AccessCode=HYP2021&accessCode=HYP2021&_ga=2.127606158.2037871260.1596723876-1652476674.1589283391&redir=BIZ-so5523q0o4&rt=1596724402')"><i class="material-icons md-18">launch</i>&nbsp;Click&nbsp;here&nbsp;for&nbsp;reservation.</button>
+	(VAT, local service tax, city tax).
       </p>
+
+      <button style="padding:10px;font-size: 18px" class="action-button" onclick="window.open('https://www.book-secure.com/index.php?s=results&group=czpyramida&property=czpra31278&arrival=2022-06-26&departure=2022-06-27&code=HYP2022&adults1=1&children1=0&locale=en_GB&currency=CZK&stid=tpce499jw&showPromotions=3&Hotelnames=CZPRAHTLOreaPyramida&hname=CZPRAHTLOreaPyramida&Clusternames=czpyramida&cluster=czpyramida&adulteresa=2&nbAdultsValue=2&arrivalDateValue=2021-10-04&frommonth=10&fromday=04&fromyear=2021&departureDateValue=2021-10-08&tomonth=10&today=08&toyear=2021&check_in=04/10/21&check_out=08/10/21&AccessCode=HYP2021&accessCode=HYP2021&_ga=2.127606158.2037871260.1596723876-1652476674.1589283391&redir=BIZ-so5523q0o4&rt=1596724402')"><i class="material-icons md-18">launch</i>&nbsp;Click&nbsp;here&nbsp;for&nbsp;reservation.</button>
 
       <h1 class="hidden" id="h1_travel_info">Travel information</h1>
       <p class="hidden">
@@ -654,9 +665,39 @@
       <p>The conference proceedings including peer-reviewed oral
 	presentations will be published online as Open Access in EPJ
 	Web of Conferences.</p>
-      <p>Detailed instructions will be provided during the conference.
+      <p>
+	Detailed instructions will be provided during the conference.
+      </p>
     </div>
 
+    <div id="Abstract_submission" class="tabcontent">
+      <h1>Abstract submission</h1>
+      <p>
+	The oral presentations in the parallel sessions will be
+	selected from submitted abstracts. The deadline for abstract
+	submission has been extended till March 18, 2022. We encourage
+	you to submit abstracts even if you are not sure to be able to
+	take part in the conference in person.
+      </p>
+      <button class="action-button" style="padding:10px;font-size: 18px" onclick="window.open('https://indico.cern.ch/event/896088/abstracts/')"><i class="material-icons md-18">launch</i>&nbsp;Submit&nbsp;abstract</button>
+    </div>
+
+    <div id="Registration" class="tabcontent">
+      <h1>Registration</h1>
+      <p>
+	Online registration started on January 14, 2022, and will
+	extend until May 13, 2022. The registration fee is 13000&nbsp;CZK
+	(~500&nbsp;EUR at present rates). It covers the reception,
+	scientific program events, lunches, the banquet, and the
+	proceedings.
+      </p>
+      <p>
+	Payment should be done in CZK via major credit cards through
+	the web page or by bank transfer. Payment can be done any time
+	before the registration deadline.
+      </p>
+      <button style="padding:10px;font-size: 18px" class="action-button" onclick="window.open('https://events.amca.cz/hyp-2022')"><i class="material-icons md-18">launch</i>&nbsp;Register</button>
+    </div>
 
     <script>
       document.getElementById("defaultOpen").click();
