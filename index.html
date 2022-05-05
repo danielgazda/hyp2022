@@ -351,6 +351,7 @@
 	<div class="dropdown-content">
 	  <button class="tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_venue').scrollIntoView()">Venue</button>
 	  <button class="tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_accommodation').scrollIntoView()">Accommodation</button>
+	  <button class="tablinks" onclick="displayContent('Covid', document.getElementById('button_Travel')); displayContent('Covid', document.getElementById('button_Travel'))">COVID-19</button>
 	  <button class="hidden tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_travel_info').scrollIntoView()">Travel information</button>
 	  <button class="hidden tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_local_info').scrollIntoView()">Local information</button>
 	</div>
@@ -757,6 +758,34 @@
 	before the registration deadline.
       </p>
       <button style="padding:10px;font-size: 18px" class="action-button" onclick="window.open('https://events.amca.cz/hyp-2022')"><i class="material-icons md-18">launch</i>&nbsp;Register</button>
+    </div>
+
+    <div id="Covid" class="tabcontent">
+      <h1>COVID-19 information</h1>
+      <p>
+	There are no longer any coronavirus restrictions for entry
+	into the Czech Republic and no restrictions in the country.
+	The organizers of the HYP2022 conference follow the current
+	COVID-19 situation and will take necessary measures as the
+	case may be. More information can be found on the following
+	websites:
+	<ul>
+	  <li><a href="https://www.visitczechrepublic.com/en-US/926179fc-1601-4cf8-b201-0b33b3878f08/page/covid-19">COVID-19: What You Should Know before You Come</a></li>
+	  <li><a href="https://www.mvcr.cz/mvcren/article/coronavirus-information-of-moi.aspx">The Ministry of the Interior of the Czech Republic</a></li>
+	  <li><a href="https://cz.usembassy.gov/covid-19-information-71/">COVID-19 information from the US Embassy in the Czech Republic</a></li>
+	  <li><a href="https://www.orea.cz/en/destination/frequently-asked-questions-regarding-covid19-accommodation-services/">Hotel Pyramida</a></li>
+	  <li><a href="https://koronavirus.mzcr.cz/en/">Current COVID-19 situation in the Czech Republic &ndash; The Ministry of Health</a></li>
+	  <li><a href="https://www.who.int/health-topics/coronavirus#tab=tab_3">COVID-19 information &ndash; World Health Organization</a></li>
+	</ul>
+      </p>
+
+      <p>
+	PCR tests: There are many places in Prague which provide PCR
+	tests. The best option for participants of the conference is
+	the Military University Hospital which is close to the
+	conference venue, the link to the hospital PCR tests is <a href="https://www.uvn.cz/en/information-for-patients/covid-19-information/6044-sampling-site-of-military-university-hospital">here</a>.
+	The PCR tests are provided also at the <a href="https://www.prg.aero/en/testing-covid-19">Prague airport</a>.
+      </p>
     </div>
 
     <script>
