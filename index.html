@@ -6,16 +6,11 @@
     <title>HYP2022</title>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Fira Sans" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Fira Sans Condensed" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:200&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Mono:700&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@900&display=swap" rel="stylesheet">
     <style>
 
       html {
-	  /* background-image: linear-gradient(to bottom right, #e6dfd5, #e4e4e4, #e4e4e4); */
 	  min-width: 1024px;
 	  background-color: #3b3e45;
 	  height: 100%;
@@ -125,21 +120,6 @@
 
       #menubar button:hover {background-color: #42687d;}
 
-      /* .tabbar button { */
-      /* 	  background-color: inherit; */
-      /* 	  /\* float: left; *\/ */
-      /* 	  border: none; */
-      /* 	  outline: none; */
-      /* 	  cursor: pointer; */
-      /* 	  padding: 14px 12px; */
-      /* 	  transition: 0.3s; */
-      /* 	  font-family: 'Fira Sans Condensed'; */
-      /* 	  font-weight: normal; */
-      /* 	  font-size: 18px; */
-      /* 	  margin: 0px; */
-      /* 	  color: #dcdadb; */
-      /* } */
-
       .tabbar button:hover {
 	  background-color: #42687d;
       }
@@ -160,7 +140,6 @@
       }
 
       .dropdown-content {
-	  /* display: block; */
 	  display: none;
 	  background-color: #213649;
 	  position: absolute;
@@ -178,7 +157,6 @@
 	  font-family: 'Fira Sans Condensed';
 	  font-weight: normal;
 	  font-size: 18px;
-	  /* font-size: 16px; */
 	  margin: 0px;
 	  color: #dcdadb;
 	  width: 100%;
@@ -202,9 +180,6 @@
 	  display: none;
 	  padding: 6px 12px;
 	  border-top: none;
-	  /* width: 72%; */
-	  /* float: left; */
-	  /* display: block; */
       }
 
       .action-button {
@@ -259,7 +234,6 @@
 	  width:1024px;
 	  height:130px;
 	  background-size:cover;
-	  /* float:left; */
 	  margin-bottom:20px;
 	  display: block;
 	  clear:both;
@@ -303,31 +277,38 @@
 	  <button onclick="displayContent('Organizers', document.getElementById('button_Organization'))">Committees,&nbsp;hosts<br>and&nbsp;sponsors</button>
 	  <button onclick="displayContent('Proceedings', document.getElementById('button_Organization'))">Proceedings</button>
 	  <hr class="dropdown-divider">
-	  <!-- <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_loc').scrollIntoView()">Committees</button> -->
-	  <!-- <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_hosts').scrollIntoView()">Hosts</button> -->
-	  <!-- <button onclick="displayContent('Organizers', document.getElementById('button_Organization')); document.getElementById('h1_support').scrollIntoView()">Sponsors</button> -->
 	  <button onclick="window.open('HYP2022_1st_circular.pdf')">1st circular (pdf)</button>
 	  <button onclick="window.open('HYP2022_2nd_circular.pdf')">2nd circular (pdf)</button>
-	  <button onclick="window.open('HYP2022_3rd_circular.pdf')">3rd circular (pdf)</button>
-	  <button onclick="window.open('HYP2022_poster.pdf')">Poster (pdf)</button>
+	  <button onclick="window.open('HYP2022_3rd_circular.pdf')">
+	    3rd circular (pdf)
+	  </button>
+	  <button onclick="window.open('HYP2022_poster.pdf')">
+	    Poster (pdf)
+	  </button>
 	  <hr class="dropdown-divider">
-	  <button onclick="displayContent('Contact', document.getElementById('button_Organization'))">Contact</button>
+	  <button onclick="displayContent('Contact', document.getElementById('button_Organization'))">
+	    Contact
+	  </button>
 	</div>
       </div>
 
       <div class="dropdown">
 	<button id="button_Registration" class="tablinks"><i class="material-icons md-18">how_to_reg</i>&nbsp;Abstracts & registration<i class="material-icons md-18">arrow_drop_down</i></button>
 	<div class="dropdown-content">
-	  <button class="tablinks" onclick="displayContent('Abstract_submission', document.getElementById('button_Registration'))">
+	  <button class="tablinks"
+		  onclick="displayContent('Abstract_submission', document.getElementById('button_Registration'))">
 	    Abstract&nbsp;submission
 	  </button>
-	  <button class="tablinks" onclick="displayContent('Registration', document.getElementById('button_Registration'))">
+	  <button class="tablinks"
+		  onclick="displayContent('Registration', document.getElementById('button_Registration'))">
 	    Registration
 	  </button>
-	  <button class="tablinks" onclick="displayContent('Support', document.getElementById('button_Registration'))">
+	  <button class="tablinks"
+		  onclick="displayContent('Support', document.getElementById('button_Registration'))">
 	    Support
 	  </button>
-	  <button class="tablinks" onclick="displayContent('Visa', document.getElementById('button_Registration'))">
+	  <button class="tablinks"
+		  onclick="displayContent('Visa', document.getElementById('button_Registration'))">
 	    Visa
 	  </button>
 	  <hr class="dropdown-divider">
@@ -343,14 +324,28 @@
       <div class="dropdown">
 	<button id="button_Travel" class="tablinks"><i class="material-icons md-18">map</i>&nbsp;Travel & lodging<i class="material-icons md-18">arrow_drop_down</i></button>
 	<div class="dropdown-content">
-	  <button class="tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_venue').scrollIntoView()">Venue</button>
-	  <button class="tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_accommodation').scrollIntoView()">Accommodation</button>
-	  <button class="tablinks" onclick="displayContent('Covid', document.getElementById('button_Travel')); displayContent('Covid', document.getElementById('button_Travel'))">COVID-19</button>
-	  <button class="hidden tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_travel_info').scrollIntoView()">Travel information</button>
-	  <button class="hidden tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_local_info').scrollIntoView()">Local information</button>
+	  <button class="tablinks"
+		  onclick="displayContent('Travel', document.getElementById('button_Travel'))">
+	    Travel
+	  </button>
+	  <button class="tablinks"
+		  onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_venue').scrollIntoView()">
+	    Venue
+	  </button>
+	  <button class="tablinks"
+		  onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_accommodation').scrollIntoView()">
+	    Accommodation
+	  </button>
+	  <button class="tablinks"
+		  onclick="displayContent('Covid', document.getElementById('button_Travel')); displayContent('Covid', document.getElementById('button_Travel'))">
+	    COVID-19
+	  </button>
+	  <button class="hidden tablinks"
+		  onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_local_info').scrollIntoView()">
+	    Local information
+	  </button>
 	</div>
       </div>
-      <!-- <button class="tablinks" onclick="displayContent('Contact', this)"><i class="material-icons md-18">contact_mail</i>&nbsp;Contact</button> -->
 
       <button id="button_Program"
 	      class="tablinks"
@@ -666,10 +661,6 @@
 	  <td>+420 266 173 283</td>
 	</tr>
 	<tr>
-	<!--   <td><i class="material-icons md-18">fax</i>&nbsp;&nbsp;Fax:</td> -->
-	<!--   <td>+420 220 940 165</td> -->
-	<!-- </tr> -->
-	<!-- <tr> -->
 	  <td><i class="material-icons md-18">email</i>&nbsp;&nbsp;E-mail:</td>
 	  <td>hyp2022@ujf.cas.cz</td>
 	</tr>
@@ -733,10 +724,6 @@
       <p>
 	Should you fail to submit your contribution in time, please
 	contact the organizers at <span style="font-family: 'Fira Mono';">hyp2022@ujf.cas.cz</span>.
-	<!-- The deadline for abstract -->
-	<!-- submission has been extended till April&nbsp;8,&nbsp;2022. We encourage -->
-	<!-- you to submit abstracts even if you are not sure to be able to -->
-	<!-- take part in the conference in person. -->
       </p>
       <!-- <button class="action-button" style="padding:10px;font-size: 18px" onclick="window.open('https://indico.cern.ch/event/896088/abstracts/')"><i class="material-icons md-18">launch</i>&nbsp;Submit&nbsp;abstract</button> -->
     </div>
@@ -784,12 +771,18 @@
 	case may be. More information can be found on the following
 	websites:
 	<ul>
-	  <li><a href="https://www.visitczechrepublic.com/en-US/926179fc-1601-4cf8-b201-0b33b3878f08/page/covid-19">COVID-19: What You Should Know before You Come</a></li>
-	  <li><a href="https://www.mvcr.cz/mvcren/article/coronavirus-information-of-moi.aspx">The Ministry of the Interior of the Czech Republic</a></li>
-	  <li><a href="https://cz.usembassy.gov/covid-19-information-71/">COVID-19 information from the US Embassy in the Czech Republic</a></li>
-	  <li><a href="https://www.orea.cz/en/destination/frequently-asked-questions-regarding-covid19-accommodation-services/">Hotel Pyramida</a></li>
-	  <li><a href="https://koronavirus.mzcr.cz/en/">Current COVID-19 situation in the Czech Republic &ndash; The Ministry of Health</a></li>
-	  <li><a href="https://www.who.int/health-topics/coronavirus#tab=tab_3">COVID-19 information &ndash; World Health Organization</a></li>
+	  <li><a href="https://www.visitczechrepublic.com/en-US/926179fc-1601-4cf8-b201-0b33b3878f08/page/covid-19">
+	      COVID-19: What You Should Know before You Come</a></li>
+	  <li><a href="https://www.mvcr.cz/mvcren/article/coronavirus-information-of-moi.aspx">
+	      The Ministry of the Interior of the Czech Republic</a></li>
+	  <li><a href="https://cz.usembassy.gov/covid-19-information-71/">
+	      COVID-19 information from the US Embassy in the Czech Republic</a></li>
+	  <li><a href="https://www.orea.cz/en/destination/frequently-asked-questions-regarding-covid19-accommodation-services/">
+	      Hotel Pyramida</a></li>
+	  <li><a href="https://koronavirus.mzcr.cz/en/">
+	      Current COVID-19 situation in the Czech Republic &ndash; The Ministry of Health</a></li>
+	  <li><a href="https://www.who.int/health-topics/coronavirus#tab=tab_3">
+	      COVID-19 information &ndash; World Health Organization </a></li>
 	</ul>
       </p>
 
@@ -797,9 +790,44 @@
 	PCR tests: There are many places in Prague which provide PCR
 	tests. The best option for participants of the conference is
 	the Military University Hospital which is close to the
-	conference venue, the link to the hospital PCR tests is <a href="https://www.uvn.cz/en/information-for-patients/covid-19-information/6044-sampling-site-of-military-university-hospital">here</a>.
-	The PCR tests are provided also at the <a href="https://www.prg.aero/en/testing-covid-19">Prague airport</a>.
+	conference venue, the link to the hospital PCR tests
+	is <a href="https://www.uvn.cz/en/information-for-patients/covid-19-information/6044-sampling-site-of-military-university-hospital">here</a>.
+	The PCR tests are provided also at
+	the <a href="https://www.prg.aero/en/testing-covid-19">Prague
+	airport</a>.
       </p>
+    </div>
+
+    <div id="Travel" class="tabcontent">
+      <h1>Travel to Prague</h1>
+      <p>
+	Thanks to its location in the heart of Europe, Prague is
+	easily accessible from all major European airports.<br>
+
+	The Václav Havel Airport Prague offers visitors of Prague a
+	direct connection to around 130 destinations in Europe, Asia,
+	Africa and North America.<br>
+
+	For more information please
+	visit <a href="https://www.prg.aero/en#/">Václav Havel Airport
+	Prague</a>.<br>
+      </p>
+      <h1>Prague public transport</h1>
+      <p>
+	Prague has one of the best public transportation systems in
+	Europe.
+	The <a href="http://www.myczechrepublic.com/prague/prague_metro.html">subway</a>, <a href="http://www.myczechrepublic.com/prague/trams.html">trams</a>,
+	and <a href="http://www.myczechrepublic.com/prague/buses.html">buses</a>
+	are used by two-thirds of Prague's population and cover the
+	majority of the city and outskirts. If you can't continue to
+	your destination on foot, you'll be able to catch a tram or
+	bus near a subway station. <br>
+
+	<a href="https://idos.idnes.cz/en/praha/spojeni/">Prague public transport connections</a>.<br>
+
+	The Prague public transport mobile app can be download at <a href="https://pid.cz/en/mobile-app/">www.pid.cz/en/mobile-app</a>.
+      </p>
+
     </div>
 
     <script>
