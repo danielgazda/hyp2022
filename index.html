@@ -113,7 +113,8 @@
 	  border: none;
 	  outline: none;
 	  cursor: pointer;
-	  padding: 14px 18px;
+	  /* padding: 14px 16.991px; */
+	  padding: 14px 8px;
 	  transition: 0.3s;
 	  font-family: 'Fira Sans Condensed';
 	  font-weight: normal;
@@ -292,12 +293,12 @@
     <div id="aw"></div>
 
     <div id="menubar">
-      <button class="tablinks" onclick="displayContent('Home', this)" id="defaultOpen"><i class="material-icons md-18">home</i>&nbsp;&nbsp;Welcome</button>
+      <button class="tablinks" onclick="displayContent('Home', this)" id="defaultOpen"><i class="material-icons md-18">home</i>&nbsp;Welcome</button>
 
-      <button class="tablinks" onclick="displayContent('Dates', this)"><i class="material-icons md-18">event</i>&nbsp;&nbsp;Important dates</button>
+      <button class="tablinks" onclick="displayContent('Dates', this)"><i class="material-icons md-18">event</i>&nbsp;Important dates</button>
 
       <div class="dropdown">
-	<button id="button_Organization" class="tablinks"><i class="material-icons md-18">people</i>&nbsp;&nbsp;Organization<i class="material-icons md-18">arrow_drop_down</i></button>
+	<button id="button_Organization" class="tablinks"><i class="material-icons md-18">people</i>&nbsp;Organization<i class="material-icons md-18">arrow_drop_down</i></button>
 	<div class="dropdown-content">
 	  <button onclick="displayContent('Organizers', document.getElementById('button_Organization'))">Committees,&nbsp;hosts<br>and&nbsp;sponsors</button>
 	  <button onclick="displayContent('Proceedings', document.getElementById('button_Organization'))">Proceedings</button>
@@ -315,7 +316,7 @@
       </div>
 
       <div class="dropdown">
-	<button id="button_Registration" class="tablinks"><i class="material-icons md-18">how_to_reg</i>&nbsp;&nbsp;Abstracts & registration<i class="material-icons md-18">arrow_drop_down</i></button>
+	<button id="button_Registration" class="tablinks"><i class="material-icons md-18">how_to_reg</i>&nbsp;Abstracts & registration<i class="material-icons md-18">arrow_drop_down</i></button>
 	<div class="dropdown-content">
 	  <button class="tablinks" onclick="displayContent('Abstract_submission', document.getElementById('button_Registration'))">
 	    Abstract&nbsp;submission
@@ -340,14 +341,7 @@
       </div>
 
       <div class="dropdown">
-	<button id="button_Program" class=" hidden tablinks"><i class="material-icons md-18">menu_book</i>&nbsp;&nbsp;Program<i class="material-icons md-18">arrow_drop_down</i></button>
-	<div class="dropdown-content">
-	  <button class="hidden tablinks" onclick="">Abstract submission</span></button>
-	</div>
-      </div>
-
-      <div class="dropdown">
-	<button id="button_Travel" class="tablinks"><i class="material-icons md-18">map</i>&nbsp;&nbsp;Travel & lodging<i class="material-icons md-18">arrow_drop_down</i></button>
+	<button id="button_Travel" class="tablinks"><i class="material-icons md-18">map</i>&nbsp;Travel & lodging<i class="material-icons md-18">arrow_drop_down</i></button>
 	<div class="dropdown-content">
 	  <button class="tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_venue').scrollIntoView()">Venue</button>
 	  <button class="tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_accommodation').scrollIntoView()">Accommodation</button>
@@ -356,9 +350,13 @@
 	  <button class="hidden tablinks" onclick="displayContent('Venue', document.getElementById('button_Travel')); document.getElementById('h1_local_info').scrollIntoView()">Local information</button>
 	</div>
       </div>
-      <!-- <button class="tablinks" onclick="displayContent('Contact', this)"><i class="material-icons md-18">contact_mail</i>&nbsp;&nbsp;Contact</button> -->
+      <!-- <button class="tablinks" onclick="displayContent('Contact', this)"><i class="material-icons md-18">contact_mail</i>&nbsp;Contact</button> -->
 
-      <!-- <button class="tablinks" onclick="displayContent('Dates', this)"><i class="material-icons md-18">calendar_view_month</i>&nbsp;&nbsp;Program</button> -->
+      <button id="button_Program"
+	      class="tablinks"
+	      onclick="window.open('https://indico.cern.ch/event/896088/timetable/#20220627')">
+	<i class="material-icons md-18">schedule</i>&nbsp;Program
+      </button>
 </div>
 
     <div id="Home" class="tabcontent">
