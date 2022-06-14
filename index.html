@@ -212,6 +212,8 @@
 	  margin-top: 35px;
       }
 
+      ul.social li {margin-top: 15px;}
+
       #header1 {
 	  font-family: 'Fira Sans Extra Condensed';
 	  padding-bottom:20px;
@@ -263,7 +265,7 @@
 	<div style="margin-left:40px;margin-top:5px;padding-top:0px;font-size:26px;line-height:0.7;">Prague, Czech Republic</div>
       </div>
     </div>
-    
+
     <div id="aw"></div>
 
     <div id="menubar">
@@ -347,13 +349,23 @@
 	</div>
       </div>
 
-      <button id="button_Program"
-	      class="tablinks"
-	      onclick="window.open('https://indico.cern.ch/event/896088/timetable/#20220627')">
-	<i class="material-icons md-18">schedule</i>&nbsp;Program
-      </button>
-</div>
-
+      <div class="dropdown">
+	<button id="button_Program" class="tablinks">
+	  <i class="material-icons md-18">schedule</i>&nbsp;Program<i class="material-icons md-18">arrow_drop_down</i>
+	</button>
+	<div class="dropdown-content" style="min-width: 170px;">
+	  <button class="tablinks"
+		  onclick="displayContent('Program_sci', document.getElementById('button_Program'))">
+	    Scientific program
+	  </button>
+	  <button class="tablinks"
+		  onclick="displayContent('Program_soc', document.getElementById('button_Program'))">
+	    Social program
+	  </button>
+	</div>
+      </div>
+    </div>
+    
     <div id="Home" class="tabcontent">
 
       <h1>Welcome</h1>
@@ -400,14 +412,14 @@
 
       <p>The HYP2022 conference is supported by THEIA-STRONG2020,
 	CAAS, BNL-CZ, CERN-CZ, and FAIR-CZ.</p>
-      
+
       <p>As a pre-conference event, the
 	<a href="https://indico.cern.ch/event/1141623/">XXXI
 	Indian-Summer School of Physics</a> will be held at the FNSPE
 	CTU in Prague from June&nbsp;24 through
 	June&nbsp;26,&nbsp;2022. The <a href="https://indico.cern.ch/event/1141623/page/25175-registration">registration</a> is now open.
       </p>
-      
+
       <p>
 	<b><font color="#892c1b">The HYP2022 will be organized as an
 	on-site event. Nonetheless, on-line participation will be
@@ -695,7 +707,7 @@
       Requests for the support should be addressed to the local
       organizing committee.</p>
     </div>
-    
+
     <div id="Visa" class="tabcontent">
       <h1>Visa</h1>
       <p>Citizens of some countries might require a visa to enter the
@@ -743,7 +755,7 @@
 	will be possible until June&nbsp;17,&nbsp;2022. The
 	registration fee is 2000&nbsp;CZK (~80&nbsp;EUR).</font>
       </p>
-      
+
       <p>
 	Payment should be done in CZK via major credit cards through
 	the web page or by bank transfer.
@@ -828,6 +840,91 @@
 	The Prague public transport mobile app can be download at <a href="https://pid.cz/en/mobile-app/">www.pid.cz/en/mobile-app</a>.
       </p>
 
+    </div>
+
+    <div id="Program_sci" class="tabcontent">
+      <h1>Scientific program</h1>
+      <p>
+	The scientific program of the HYP2022 conference comprizes
+	invited and contributed talks in the plenary and parallel sessions,
+	and contributed papers in the poster session. The timetable of the
+	conference can be found here:
+	<a href='https://indico.cern.ch/event/896088/timetable/#20220627'>HYP2022&nbsp;Timetable</a>.</p>
+      <p>
+	The registration desk in the conference center of hotel
+	Pyramida will be open on Sunday, June&nbsp;26, between 18:00 and
+	20:00, and then on Monday, June&nbsp;27, from 7:30.</p>
+      <p>
+	The speakers are kindly asked to provide files with their
+	talks at least one session prior their talks.</p>
+      <p>
+	The authors of the on-site posters are expected to post their
+	posters on the assign boards in the conference center during
+	Monday afternoon and Tuesday morning, including the lunch
+	break.</p>
+      <p>
+	Instruction for the online talks and posters will be sent
+	directly to the presenters by email and will be posted here in
+	few days.</p>
+    </div>
+
+    <div id="Program_soc" class="tabcontent">
+      <h1>Social program</h1>
+      <p>
+	The HYP2022 participants and accompanying persons are cordially invited to the following events:
+	<ul class="social">
+	  <li><b>Welcome reception</b><br>
+	    Hotel Pyramida<br>
+	    <i>Monday, June 27, 19:00</i>
+	  </li>
+
+	  <li><b>Poster session</b> (with refreshment)<br>
+	    Hotel Pyramida<br>
+	    <i>Tuesday, June 28, 16:00</i></li>
+
+	  <li><b>Public lecture</b> (with refreshment)<br>
+	    FNSPE, Czech Technical University, Břehová 7, Praha 1
+	    <button class="action-button" onclick="window.open('https://goo.gl/maps/RRKzFZ2Db2hq8ejr8')"><i class="material-icons md-18">launch</i>&nbsp;Map</button>	    
+	    <br>
+	    <i>Tuesday, June 28, 18:30</i>
+	  </li>
+
+	  <li><b>Prague sightseeing tour I</b><br>
+	    from Hotel Pyramida to Jan Deyl Conservatory<br>
+	    approx. 3 km &ndash; 1 hour
+	    (route option <a href="tour-1.png"><i class="material-icons md-18">article</i>&nbsp;a</a> /
+	    <a href="tour-2.png"><i class="material-icons md-18">article</i>&nbsp;b</a> /
+	    <a href="tour-3.png"><i class="material-icons md-18">article</i>&nbsp;c</a>)<br>
+	    <i>Thursday, June 30, 16:30</i>
+
+	  <li><b>Concert of Chamber Music</b><br>
+
+	    <a href="https://www.martinuquartet.com/en">Martinu Quartet</a>:<br>
+	      &ndash; F.&nbsp;Mendelssohn-Bartholdy (1809 - 1847): String Quartet no. 2 in A Minor op. 13<br>
+	      &ndash; A.&nbsp;Dvorak (1841 - 1904):  String Quartet F Major op. 96  "American"<br>
+	    <a href="https://www.kjd.cz/index.php?pg=o-skole">Jan Deyl Conservatory</a>,
+	    <!-- https://www.kjd.cz/img/koncertni-sal-00.jpg -->
+	    Maltezské náměstí 14, Praha 1 &ndash; Malá Strana
+	    <button class="action-button" onclick="window.open('https://goo.gl/maps/8va3p9uUdLHcyhBB6')"><i class="material-icons md-18">launch</i>&nbsp;Map</button>
+	    <br>
+	    <i>Thursday, June 30, 18:00</i>
+
+	  <li><b>Prague sightseeing tour II</b><br>
+	    from Jan Deyl Conservatory to Klub Lávka<br>
+	    approx. 1 km &ndash; 20 minutes
+	    (route option <a href="route-4"><i class="material-icons md-18">article</i>&nbsp;a</a> /
+	    <a href="route-5"><i class="material-icons md-18">article</i>&nbsp;b</a>)<br>
+	    <i>Thursday June&nbsp;30, 19:30</i>
+
+	  <li><b>Conference dinner</b><br>
+	    Klub Lávka, Novotného lávka 1
+	    <button class="action-button" onclick="window.open('https://goo.gl/maps/V3Txd1Pce1i83w7j6')"><i class="material-icons md-18">launch</i>&nbsp;Map</button>
+	    <br>
+	    <i>Thursday, June&nbsp;30, 20:00</i>
+	  </li>
+	</ul>
+      </p>
+      <div id="bottom_spacing"></div>
     </div>
 
     <script>
